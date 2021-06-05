@@ -10,7 +10,7 @@ export const LPReference = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui saepe
           ipsam veritatis explicabo culpa animi laudantium ut enim sit doloribus
         </p>
-        <image className="avatar"></image>
+        <image className="avatar" />
         <p>Vendelín</p>
       </div>
       <div>
@@ -18,7 +18,7 @@ export const LPReference = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui saepe
           ipsam veritatis explicabo cul
         </p>
-        <image className="avatar"></image>
+        <image className="avatar" />
         <p>Hromnice</p>
       </div>
     </div>
