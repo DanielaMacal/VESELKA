@@ -12,14 +12,14 @@ export const FormStep2 = () => {
         <Input
           className=""
           type="text"
-          name="weeding place"
+          name="weddingPlace"
           label="miesto svadby"
           value=""
         />
         <Input
           className=""
           type="text"
-          name="celebration place"
+          name="celebrationPlace"
           label="miesto oslavy"
           value=""
         />
