@@ -1,7 +1,5 @@
-import 'style.css';
 import React from 'react';
 import { Input } from '../../Inputs';
-import { Button } from '../../button';
 import { Formik } from 'formik';
 
 export const FormStep1 = () => {
@@ -42,7 +40,7 @@ export const FormStep1 = () => {
             placeholder="heslo"
             value=""
           />
-          <Button className="" text="Edituj" onClick={() => {}} />
+          {/* <Button className="" text="Edituj" onClick={() => {}} /> */}
         </div>
       )}
     </Formik>

@@ -1,4 +1,3 @@
-import 'style.css';
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 import { FormStep1 } from '../../components/formSteps/formStep1';
@@ -6,6 +5,7 @@ import { FormStep2 } from '../../components/formSteps/formStep2';
 import { FormStep3 } from '../../components/formSteps/formStep3';
 import { db } from '../../db';
 import { useHistory } from 'react-router-dom';
+import { Button } from '../../components/button';
 
 export const CreatePage = (props) => {
   let history = useHistory();
@@ -63,27 +63,11 @@ export const CreatePage = (props) => {
         isSubmitting,
         /* and other goodies */
       }) => (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.email}
-          />
-          {errors.email && touched.email && errors.email}
-          <input
-            type="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-          />
-          {errors.password && touched.password && errors.password}
-          <button type="submit" disabled={isSubmitting}>
-            Submit
-          </button>
-        </form>
+        <>
+          {formikPages[step]}
+          {step > 0 && <Button onClick={() => setStep(s - 1)} text="zpet" />}
+          <Button onClick={() => handleSubmit()} text="dalej" />
+        </>
       )}
     </Formik>
   );

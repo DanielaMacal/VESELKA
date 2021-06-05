@@ -1,6 +1,5 @@
-import 'style.css';
 import React from 'react';
-import { Input } from '../Inputs';
+import { Input } from '../../Inputs';
 
 export const FormStep2 = () => {
   return (
