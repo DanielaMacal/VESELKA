@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import { Preview } from '../../components/preview';
+import { Preview } from '../../components/Preview';
 import { db } from '../../db';
 
 import './style.css';
