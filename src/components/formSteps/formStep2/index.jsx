@@ -1,7 +1,6 @@
 import 'style.css';
 import React from 'react';
 import { Input } from '../Inputs';
-import { Button } from '../button';
 
 export const FormStep2 = () => {
   return (
@@ -9,25 +8,19 @@ export const FormStep2 = () => {
       <div className="weddingPlace">
         <h1>Sem přidej detaily o Vaší svatbě</h1>
         <p> Bla bla bla bla bla</p>
-        <Input
-          className=""
-          type="text"
-          name="date"
-          placeholder="date"
-          value=""
-        />
+        <Input className="" type="text" name="date" label="dátum" value="" />
         <Input
           className=""
           type="text"
           name="weeding place"
-          placeholder="weeding place"
+          label="miesto svadby"
           value=""
         />
         <Input
           className=""
           type="text"
           name="celebration place"
-          placeholder="celebration place"
+          label="miesto oslavy"
           value=""
         />
       </div>
