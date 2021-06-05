@@ -4,6 +4,7 @@ import './style.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage';
 import { EditPage } from './pages/EditPage';
+import { PreviewPage } from './pages/PreviewPage';
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
         </Route>
         <Route path="/edit" exact>
           <EditPage />
+        </Route>
+        <Route path="/preview/:id" exact>
+          <PreviewPage />
         </Route>
       </Switch>
     </Router>
