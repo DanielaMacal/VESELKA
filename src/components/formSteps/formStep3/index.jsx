@@ -4,6 +4,46 @@ import { Input } from '../Inputs';
 
 export const FormStep3 = () => {
   return (
+    <Formik
+      initialValues={{
+        starter: '',
+        main: '',
+        main2: '',
+        desert: '',
+        dinner: '',
+        drinksNonAlco: '',
+        drinksAlco: '',
+        others: '',
+      }}
+      // validate={(values) => {
+      //   const errors = {};
+      //   if (!values.email) {
+      //     errors.email = 'Required';
+      //   } else if (
+      //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+      //   ) {
+      //     errors.email = 'Invalid email address';
+      //   }
+      //   return errors;
+      // }}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        isSubmitting,
+        /* and other goodies */
+      })
+      =>( 
     <div className="formStep3">
       <div className="weddingFood">
         <h1>Sem přidej detaily o Vaší svatbě</h1>
@@ -51,5 +91,7 @@ export const FormStep3 = () => {
         <Input className="" type="text" name="others" label="iné" value="" />
       </div>
     </div>
+    )}
+    </Formik>
   );
 };
