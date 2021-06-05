@@ -1,6 +1,7 @@
 import 'style.css';
 import React from 'react';
 import { Input } from '../../Inputs';
+import { Button } from '../../button';
 
 export const FormStep1 = () => {
   return (
@@ -11,7 +12,7 @@ export const FormStep1 = () => {
         className=""
         type="text"
         name="nickname"
-        palceholder="nickname"
+        placeholder="nickname"
         value=""
       />
 
@@ -22,6 +23,7 @@ export const FormStep1 = () => {
         palceholder="heslo"
         value=""
       />
+      <Button className="" text="Edituj" onClick={() => {}} />
     </div>
   );
 };
