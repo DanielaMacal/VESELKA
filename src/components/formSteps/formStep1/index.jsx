@@ -22,23 +22,9 @@ export const FormStep1 = () => {
       //   }
       //   return errors;
       // }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
+      onSubmit={onSubmit}
     >
-      {({
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        handleSubmit,
-        isSubmitting,
-        /* and other goodies */
-      }) => (
+      {({ values }) => (
         <div className="formStep1">
           <h1> Tvá veselka </h1>
           <Input
