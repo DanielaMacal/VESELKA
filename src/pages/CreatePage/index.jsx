@@ -8,11 +8,14 @@ import { FormStep5 } from '../../components/formSteps/FormStep5';
 import { db } from '../../db';
 import { useHistory } from 'react-router-dom';
 import { Button } from '../../components/button';
+import * as yup from 'yup';
+import { schema1, schema2, schema3 } from '../../components/validationSchema';
 
-export const CreatePage = (props) => {
+export const CreatePage = () => {
   const history = useHistory();
 
   const [step, setStep] = useState(0);
+  const validations = [schema1, schema2, schema3];
 
   const onSubmit = async (values) => {
     console.log(values);
@@ -55,18 +58,8 @@ export const CreatePage = (props) => {
         groomPicture: '',
         weddingAnnouncementPicture: null,
       }}
-      // validate={(values) => {
-      //   const errors = {};
-      //   if (!values.email) {
-      //     errors.email = 'Required';
-      //   } else if (
-      //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-      //   ) {
-      //     errors.email = 'Invalid email address';
-      //   }
-      //   return errors;
-      // }}
       onSubmit={onSubmit}
+      validationSchema={validations[step]}
     >
       {({
         values,
@@ -82,6 +75,7 @@ export const CreatePage = (props) => {
         <>
           {
             formikPagesWithProps({
+              errors,
               values,
               handleChange,
               setFieldValue,
@@ -93,6 +87,7 @@ export const CreatePage = (props) => {
           <Button
             onClick={() => handleSubmit()}
             text={isLastStep() ? 'uložiť' : 'ďalej'}
+            type="submit"
           />
         </>
       )}

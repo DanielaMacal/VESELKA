@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '../../Inputs';
 import { Formik } from 'formik';
 
-export const FormStep2 = ({ values, handleChange }) => {
+export const FormStep2 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep2">
       <div className="weddingPlace">
@@ -15,6 +15,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="dátum"
           value={values.date}
           onChange={handleChange('date')}
+          error={errors.date}
         />
         <Input
           className=""
@@ -23,6 +24,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="miesto svadby"
           value={values.weddingPlace}
           onChange={handleChange('weddingPlace')}
+          error={errors.weddingPlace}
         />
         <Input
           className=""
@@ -31,6 +33,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="miesto oslavy"
           value={values.celebrationPlace}
           onChange={handleChange('celebrationPlace')}
+          error={errors.celebrationPlace}
         />
       </div>
 
@@ -43,6 +46,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="čas od"
           value={values.timeFrom}
           onChange={handleChange('timeFrom')}
+          error={errors.weddingProgram}
         />
         <Input
           className=""
@@ -51,6 +55,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="čas do"
           value={values.timeTo}
           onChange={handleChange('timeTo')}
+          error={errors.timeTo}
         />
         <Input
           className=""
@@ -59,6 +64,7 @@ export const FormStep2 = ({ values, handleChange }) => {
           label="čo sa bude diať"
           value={values.program}
           onChange={handleChange('program')}
+          error={errors.program}
         />
       </div>
     </div>
