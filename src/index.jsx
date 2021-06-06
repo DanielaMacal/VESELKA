@@ -1,11 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './style.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import { LandingPage } from './pages/LandingPage';
 import { EditPage } from './pages/EditPage';
 import { PreviewPage } from './pages/PreviewPage';
 import { CreatePage } from './pages/CreatePage';
+
+import './style.css';
 
 const App = () => {
   return (
