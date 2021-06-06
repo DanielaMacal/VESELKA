@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '../../Inputs';
 import { Formik } from 'formik';
 
-export const FormStep3 = ({ values, handleChange }) => {
+export const FormStep3 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep3">
       <div className="weddingFood">
@@ -16,6 +16,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="predkrm"
           value={values.starter}
           onChange={handleChange('starter')}
+          error={errors.starter}
         />
         <Input
           className=""
@@ -24,6 +25,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="hlavný chod"
           value={values.main}
           onChange={handleChange('main')}
+          error={errors.main}
         />
         <Input
           className=""
@@ -32,6 +34,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="hlavný chod 2"
           value={values.main2}
           onChange={handleChange('main2')}
+          error={errors.main2}
         />
         <Input
           className=""
@@ -40,6 +43,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="dezert"
           value={values.desert}
           onChange={handleChange('desert')}
+          error={errors.desert}
         />
 
         <Input
@@ -49,6 +53,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="večera"
           value={values.dinner}
           onChange={handleChange('dinner')}
+          error={errors.dinner}
         />
 
         <Input
@@ -58,6 +63,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="nealkoholické nápoje"
           value={values.drinksNonAlco}
           onChange={handleChange('drinksNonAlco')}
+          error={errors.drinksNonAlco}
         />
         <Input
           className=""
@@ -66,6 +72,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="nápoje alko"
           value={values.drinksAlco}
           onChange={handleChange('drinksAlco')}
+          error={errors.drinksAlco}
         />
         <Input
           className=""
@@ -74,6 +81,7 @@ export const FormStep3 = ({ values, handleChange }) => {
           label="iné"
           value={values.others}
           onChange={handleChange('others')}
+          error={errors.others}
         />
       </div>
     </div>

@@ -7,32 +7,13 @@ import { db } from '../../db';
 import { useHistory } from 'react-router-dom';
 import { Button } from '../../components/button';
 import * as yup from 'yup';
+import { schema1, schema2, schema3 } from '../../components/validationSchema';
 
-export const CreatePage = (props) => {
+export const CreatePage = () => {
   const history = useHistory();
 
   const [step, setStep] = useState(0);
-  const SignupSchema = Yup.object().shape({
-    nickname: Yup.string('').required('pridaj prihlasovacie meno'),
-    password: Yup.string('')
-      .min(2, 'Too Short!')
-      .max(50, 'Too Long!')
-      .required('pridaj heslo'),
-    date: Yup.date('').required('zadaj datum'),
-    weddingPlace: Yup.string('').required('pridaj miesto svadby'),
-    celebrationPlace: Yup.string('').required('pridaj miesto oslavy'),
-    timeFrom: Yup.number('').required('zadaj čas začiatku'),
-    timeTo: Yup.number('').required('zadaj čas konca'),
-    program: Yup.string('').required('pridaj program'),
-    starter: Yup.string('').required('pridaj predjedlo'),
-    main: Yup.string('').required('pridaj hlavny chod'),
-    main2: Yup.string('').required('pridaj druhy hlavny chod'),
-    desert: Yup.string('').required('pridaj dezert'),
-    dinner: Yup.string('').required('pridaj večeru'),
-    drinksNonAlco: Yup.string(''),
-    drinksAlco: Yup.string(''),
-    others: Yup.string(''),
-  });
+  const validations = [schema1, schema2, schema3];
 
   const onSubmit = async (values) => {
     console.log(values);
@@ -68,18 +49,8 @@ export const CreatePage = (props) => {
         drinksAlco: '',
         others: '',
       }}
-      // validate={(values) => {
-      //   const errors = {};
-      //   if (!values.email) {
-      //     errors.email = 'Required';
-      //   } else if (
-      //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-      //   ) {
-      //     errors.email = 'Invalid email address';
-      //   }
-      //   return errors;
-      // }}
       onSubmit={onSubmit}
+      validationSchema={validations[step]}
     >
       {({
         values,
@@ -94,6 +65,7 @@ export const CreatePage = (props) => {
         <>
           {
             formikPagesWithProps({
+              errors,
               values,
               handleChange,
             })[step]
@@ -104,6 +76,7 @@ export const CreatePage = (props) => {
           <Button
             onClick={() => handleSubmit()}
             text={isLastStep() ? 'uložiť' : 'ďalej'}
+            type="submit"
           />
         </>
       )}

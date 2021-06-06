@@ -13,6 +13,7 @@ export const Input = (props) => {
         value={props.value}
         onChange={props.onChange}
       />
+      {props.error && <div className="error">{props.error}</div>}
     </label>
   );
 };
