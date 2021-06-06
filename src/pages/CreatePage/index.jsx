@@ -13,6 +13,7 @@ export const CreatePage = (props) => {
   const [step, setStep] = useState(0);
 
   const onSubmit = async (values) => {
+    console.log(values);
     if (isLastStep()) {
       const res = await db.collection('veselka').add(values);
       history.push(`/preview/${res.id}`);
@@ -20,11 +21,10 @@ export const CreatePage = (props) => {
       setStep((s) => s + 1);
     }
   };
-  const formikPages = [
-    <FormStep1 onSubmit={onSubmit} />,
-    <FormStep2 onSubmit={onSubmit} />,
-    <FormStep3 onSubmit={onSubmit} />,
-  ];
+  const formikPages = [FormStep1, FormStep2, FormStep3];
+
+  const formikPagesWithProps = (props) =>
+    formikPages.map((FormikStep) => <FormikStep {...props} />);
 
   const isLastStep = () => step === formikPages.length - 1;
 
@@ -70,11 +70,19 @@ export const CreatePage = (props) => {
         /* and other goodies */
       }) => (
         <>
-          {formikPages[step]}
+          {
+            formikPagesWithProps({
+              values,
+              handleChange,
+            })[step]
+          }
           {step > 0 && (
             <Button onClick={() => setStep((s) => s - 1)} text="zpet" />
           )}
-          <Button onClick={() => handleSubmit()} text="dalej" />
+          <Button
+            onClick={() => handleSubmit()}
+            text={isLastStep() ? 'uložiť' : 'ďalej'}
+          />
         </>
       )}
     </Formik>
