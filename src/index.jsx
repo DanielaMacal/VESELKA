@@ -8,6 +8,7 @@ import { PreviewPage } from './pages/PreviewPage';
 import { CreatePage } from './pages/CreatePage';
 
 import './style.css';
+import { FinalPage } from './pages/FinalPage';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
         </Route>
         <Route path="/create" exact>
           <CreatePage />
+        </Route>
+        <Route path="/final/:id" exact>
+          <FinalPage />
         </Route>
       </Switch>
     </Router>

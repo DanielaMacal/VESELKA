@@ -9,8 +9,8 @@ const schema2 = object().shape({
   date: date().required('Zadaj datum'),
   weddingPlace: string().required('Zadaj miesto svadby'),
   celebrationPlace: string().required('Zadaj miesto oslavy'),
-  timeFrom: number().required('Zadaj čas začiatku'),
-  timeTo: number().required('Zadaj koniec oslavy'),
+  // timeFrom: number().required('Zadaj čas začiatku'),
+  // timeTo: number().required('Zadaj koniec oslavy'),
   program: string().required('Pridaj program'),
 });
 

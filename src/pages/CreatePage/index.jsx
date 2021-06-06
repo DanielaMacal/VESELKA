@@ -6,13 +6,14 @@ import { FormStep3 } from '../../components/formSteps/formStep3';
 import { FormStep4 } from '../../components/formSteps/FormStep4';
 import { FormStep5 } from '../../components/formSteps/FormStep5';
 import { db } from '../../db';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { Button } from '../../components/button';
-import * as yup from 'yup';
+
 import { schema1, schema2, schema3 } from '../../components/validationSchema';
 
 export const CreatePage = () => {
   const history = useHistory();
+  const { id } = useParams();
 
   const [step, setStep] = useState(0);
   const validations = [schema1, schema2, schema3];
@@ -21,7 +22,7 @@ export const CreatePage = () => {
     console.log(values);
     if (isLastStep()) {
       const res = await db.collection('veselka').add(values);
-      history.push(`/preview/${res.id}`);
+      history.push(`/final/${res.id}`);
     } else {
       setStep((s) => s + 1);
     }
