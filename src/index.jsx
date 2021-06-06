@@ -6,6 +6,7 @@ import { LandingPage } from './pages/LandingPage';
 import { EditPage } from './pages/EditPage';
 import { PreviewPage } from './pages/PreviewPage';
 import { CreatePage } from './pages/CreatePage';
+import { EditFormPage } from './pages/EditFormPage';
 
 import './style.css';
 import { FinalPage } from './pages/FinalPage';
@@ -28,6 +29,9 @@ const App = () => {
         </Route>
         <Route path="/final/:id" exact>
           <FinalPage />
+        </Route>
+        <Route path="/edit/:id" exact>
+          <EditFormPage />
         </Route>
       </Switch>
     </Router>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory, useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import { Button } from '../../components/button';
 
 export const FinalPage = () => {
@@ -12,9 +11,11 @@ export const FinalPage = () => {
       <h1>Vaša stránka bola vytvorená!</h1>
       <p>
         Tento odkaz rozošlete svojim hosťom:{' '}
-        <Link to="/preview/{id}">
-          https://main--gifted-nightingale-e3538a.netlify.app/preview/{id}
-        </Link>
+        <a
+          href={`https://main--gifted-nightingale-e3538a.netlify.app/preview/${id}`}
+        >
+          svatebni web
+        </a>
       </p>
       <p>
         Toto je Vaše ID, uchovajte ho pre prípad editácie Vašej stránky: {id}
