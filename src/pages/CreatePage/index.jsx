@@ -11,7 +11,20 @@ export const CreatePage = (props) => {
   let history = useHistory();
 
   const [step, setStep] = useState(0);
-  const formikPages = [<FormStep1 />, <FormStep2 />, <FormStep3 />];
+
+  const onSubmit = async (values) => {
+    if (isLastStep()) {
+      const res = await db.collection('veselka').add(values);
+      history.push(`/preview/${res.id}`);
+    } else {
+      setStep((s) => s + 1);
+    }
+  };
+  const formikPages = [
+    <FormStep1 onSubmit={onSubmit} />,
+    <FormStep2 onSubmit={onSubmit} />,
+    <FormStep3 onSubmit={onSubmit} />,
+  ];
 
   const isLastStep = () => step === formikPages.length - 1;
 
@@ -44,14 +57,7 @@ export const CreatePage = (props) => {
       //   }
       //   return errors;
       // }}
-      onSubmit={async (values) => {
-        if (isLastStep()) {
-          const res = await db.collection('veselka').add(values);
-          history.push('/preview/:id');
-        } else {
-          setStep((s) => s + 1);
-        }
-      }}
+      onSubmit={onSubmit}
     >
       {({
         values,
@@ -65,7 +71,9 @@ export const CreatePage = (props) => {
       }) => (
         <>
           {formikPages[step]}
-          {step > 0 && <Button onClick={() => setStep(s - 1)} text="zpet" />}
+          {step > 0 && (
+            <Button onClick={() => setStep((s) => s - 1)} text="zpet" />
+          )}
           <Button onClick={() => handleSubmit()} text="dalej" />
         </>
       )}

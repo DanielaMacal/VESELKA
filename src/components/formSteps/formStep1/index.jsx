@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '../../Inputs';
 import { Formik } from 'formik';
 
-export const FormStep1 = () => {
+export const FormStep1 = (props) => {
   return (
     <Formik
       initialValues={{
@@ -20,7 +20,7 @@ export const FormStep1 = () => {
       //   }
       //   return errors;
       // }}
-      onSubmit={onSubmit}
+      onSubmit={props.onSubmit}
     >
       {({ values }) => (
         <div className="formStep1">
