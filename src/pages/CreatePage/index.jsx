@@ -6,11 +6,33 @@ import { FormStep3 } from '../../components/formSteps/formStep3';
 import { db } from '../../db';
 import { useHistory } from 'react-router-dom';
 import { Button } from '../../components/button';
+import * as yup from 'yup';
 
 export const CreatePage = (props) => {
   const history = useHistory();
 
   const [step, setStep] = useState(0);
+  const SignupSchema = Yup.object().shape({
+    nickname: Yup.string('').required('pridaj prihlasovacie meno'),
+    password: Yup.string('')
+      .min(2, 'Too Short!')
+      .max(50, 'Too Long!')
+      .required('pridaj heslo'),
+    date: Yup.date('').required('zadaj datum'),
+    weddingPlace: Yup.string('').required('pridaj miesto svadby'),
+    celebrationPlace: Yup.string('').required('pridaj miesto oslavy'),
+    timeFrom: Yup.number('').required('zadaj čas začiatku'),
+    timeTo: Yup.number('').required('zadaj čas konca'),
+    program: Yup.string('').required('pridaj program'),
+    starter: Yup.string('').required('pridaj predjedlo'),
+    main: Yup.string('').required('pridaj hlavny chod'),
+    main2: Yup.string('').required('pridaj druhy hlavny chod'),
+    desert: Yup.string('').required('pridaj dezert'),
+    dinner: Yup.string('').required('pridaj večeru'),
+    drinksNonAlco: Yup.string(''),
+    drinksAlco: Yup.string(''),
+    others: Yup.string(''),
+  });
 
   const onSubmit = async (values) => {
     console.log(values);
