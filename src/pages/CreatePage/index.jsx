@@ -5,8 +5,13 @@ import { FormStep2 } from '../../components/formSteps/formStep2';
 import { FormStep3 } from '../../components/formSteps/formStep3';
 import { FormStep4 } from '../../components/formSteps/FormStep4';
 import { FormStep5 } from '../../components/formSteps/FormStep5';
+<<<<<<< HEAD
 import { db } from '../../db';
 import { useHistory, useParams } from 'react-router-dom';
+=======
+import { db, storage } from '../../db';
+import { useHistory } from 'react-router-dom';
+>>>>>>> origin/main
 import { Button } from '../../components/button';
 
 import { schema1, schema2, schema3 } from '../../components/validationSchema';
@@ -18,11 +23,43 @@ export const CreatePage = () => {
   const [step, setStep] = useState(0);
   const validations = [schema1, schema2, schema3];
 
+  const uploadImageToFirebase = (image, imagePropertyName) =>
+    storage
+      .ref(`/obrazky/${image.name}`)
+      .put(image)
+      .then((snapshot) => snapshot.ref.getDownloadURL())
+      .then((uploadedImageUrl) => ({ uploadedImageUrl, imagePropertyName }));
+
   const onSubmit = async (values) => {
     console.log(values);
+
     if (isLastStep()) {
+<<<<<<< HEAD
       const res = await db.collection('veselka').add(values);
       history.push(`/final/${res.id}`);
+=======
+      Promise.all([
+        uploadImageToFirebase(values.bridePicture, 'bridePicture'),
+        uploadImageToFirebase(values.groomPicture, 'groomPicture'),
+        uploadImageToFirebase(
+          values.weddingAnnouncementPicture,
+          'weddingAnnouncementPicture',
+        ),
+      ]).then((promiseValues) => {
+        let storedValues = { ...values };
+
+        promiseValues.forEach((promiseValue) => {
+          storedValues = {
+            ...storedValues,
+            [promiseValue.imagePropertyName]: promiseValue.uploadedImageUrl,
+          };
+        });
+
+        db.collection('veselka')
+          .add(storedValues)
+          .then((res) => history.push(`/preview/${res.id}`));
+      });
+>>>>>>> origin/main
     } else {
       setStep((s) => s + 1);
     }
@@ -60,7 +97,7 @@ export const CreatePage = () => {
         weddingAnnouncementPicture: null,
       }}
       onSubmit={onSubmit}
-      validationSchema={validations[step]}
+      // validationSchema={validations[step]}
     >
       {({
         values,
