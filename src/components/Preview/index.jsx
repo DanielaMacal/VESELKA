@@ -1,6 +1,17 @@
 import React from 'react';
+import { Details } from '../Details';
+import { Food } from '../Food';
+import { SheHeSays } from '../SheHeSays';
+import { WeddingAnnouncement } from '../WeddingAnnouncement';
 import './style.css';
 
-export const Preview = () => {
-  return <>Preview</>;
+export const Preview = (props) => {
+  return (
+    <>
+      <WeddingAnnouncement {...props} />
+      <SheHeSays {...props} />
+      <Details {...props} />
+      <Food {...props} />
+    </>
+  );
 };
