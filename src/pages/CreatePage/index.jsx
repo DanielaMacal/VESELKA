@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 import { Button } from '../../components/button';
 
 export const CreatePage = (props) => {
-  let history = useHistory();
+  const history = useHistory();
 
   const [step, setStep] = useState(0);
 
