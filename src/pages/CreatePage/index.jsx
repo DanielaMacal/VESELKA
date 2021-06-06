@@ -3,6 +3,8 @@ import { Formik } from 'formik';
 import { FormStep1 } from '../../components/formSteps/formStep1';
 import { FormStep2 } from '../../components/formSteps/formStep2';
 import { FormStep3 } from '../../components/formSteps/formStep3';
+import { FormStep4 } from '../../components/formSteps/FormStep4';
+import { FormStep5 } from '../../components/formSteps/FormStep5';
 import { db } from '../../db';
 import { useHistory } from 'react-router-dom';
 import { Button } from '../../components/button';
@@ -24,7 +26,7 @@ export const CreatePage = () => {
       setStep((s) => s + 1);
     }
   };
-  const formikPages = [FormStep1, FormStep2, FormStep3];
+  const formikPages = [FormStep1, FormStep2, FormStep3, FormStep4, FormStep5];
 
   const formikPagesWithProps = (props) =>
     formikPages.map((FormikStep) => <FormikStep {...props} />);
@@ -48,6 +50,13 @@ export const CreatePage = () => {
         drinksNonAlco: '',
         drinksAlco: '',
         others: '',
+        bride: '',
+        brideAbout: '',
+        bridePicture: null,
+        groom: '',
+        groomAbout: '',
+        groomPicture: '',
+        weddingAnnouncementPicture: null,
       }}
       onSubmit={onSubmit}
       validationSchema={validations[step]}
@@ -60,6 +69,7 @@ export const CreatePage = () => {
         handleBlur,
         handleSubmit,
         isSubmitting,
+        setFieldValue,
         /* and other goodies */
       }) => (
         <>
@@ -68,6 +78,7 @@ export const CreatePage = () => {
               errors,
               values,
               handleChange,
+              setFieldValue,
             })[step]
           }
           {step > 0 && (
