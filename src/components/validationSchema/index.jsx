@@ -11,7 +11,7 @@ const schema2 = object().shape({
   celebrationPlace: string().required('Zadaj miesto oslavy'),
   // timeFrom: number().required('Zadaj čas začiatku'),
   // timeTo: number().required('Zadaj koniec oslavy'),
-  program: string().required('Pridaj program'),
+  // program: string().required('Pridaj program'),
 });
 
 const schema3 = object().shape({
