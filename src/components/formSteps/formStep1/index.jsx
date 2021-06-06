@@ -22,7 +22,7 @@ export const FormStep1 = (props) => {
       // }}
       onSubmit={props.onSubmit}
     >
-      {({ values }) => (
+      {({ values, handleChange }) => (
         <div className="formStep1">
           <h1> Tvá veselka </h1>
           <Input
@@ -30,7 +30,8 @@ export const FormStep1 = (props) => {
             type="text"
             name="nickname"
             placeholder="nickname"
-            value=""
+            value={values.nickname}
+            onChange={handleChange('nickname')}
           />
 
           <Input
@@ -38,7 +39,8 @@ export const FormStep1 = (props) => {
             type="password"
             name="password"
             placeholder="heslo"
-            value=""
+            value={values.password}
+            onChange={handleChange('password')}
           />
           {/* <Button className="" text="Edituj" onClick={() => {}} /> */}
         </div>

@@ -28,7 +28,7 @@ export const FormStep3 = (props) => {
       // }}
       onSubmit={props.onSubmit}
     >
-      {({ values }) => (
+      {({ values, handleChange }) => (
         <div className="formStep3">
           <div className="weddingFood">
             <h1>Sem přidej detaily o Vaší svatbě</h1>
@@ -39,28 +39,32 @@ export const FormStep3 = (props) => {
               type="text"
               name="starter"
               label="predkrm"
-              value=""
+              value={values.starter}
+              onChange={handleChange('starter')}
             />
             <Input
               className=""
               type="text"
               name="main"
               label="hlavný chod"
-              value=""
+              value={values.main}
+              onChange={handleChange('main')}
             />
             <Input
               className=""
               type="text"
               name="main2"
               label="hlavný chod 2"
-              value=""
+              value={values.main2}
+              onChange={handleChange('main2')}
             />
             <Input
               className=""
               type="text"
               name="desert"
               label="dezert"
-              value=""
+              value={values.desert}
+              onChange={handleChange('desert')}
             />
 
             <Input
@@ -68,29 +72,33 @@ export const FormStep3 = (props) => {
               type="text"
               name="dinner"
               label="večera"
-              value=""
+              value={values.dinner}
+              onChange={handleChange('dinner')}
             />
 
             <Input
               className=""
               type="text"
               name="drinksNonAlco"
-              placeholder="nápoje nealko"
-              value=""
+              label="nealkoholické nápoje"
+              value={values.drinksNonAlco}
+              onChange={handleChange('drinksNonAlco')}
             />
             <Input
               className=""
               type="text"
               name="drinksAlco"
               label="nápoje alko"
-              value=""
+              value={values.drinksAlco}
+              onChange={handleChange('drinksAlco')}
             />
             <Input
               className=""
               type="text"
               name="others"
               label="iné"
-              value=""
+              value={values.others}
+              onChange={handleChange('others')}
             />
           </div>
         </div>

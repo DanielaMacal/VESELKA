@@ -74,7 +74,10 @@ export const CreatePage = (props) => {
           {step > 0 && (
             <Button onClick={() => setStep((s) => s - 1)} text="zpet" />
           )}
-          <Button onClick={() => handleSubmit()} text="dalej" />
+          <Button
+            onClick={() => handleSubmit()}
+            text={isLastStep() ? 'uložiť' : 'ďalej'}
+          />
         </>
       )}
     </Formik>
