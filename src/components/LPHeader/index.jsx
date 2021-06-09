@@ -14,9 +14,15 @@ export const LPHeader = () => {
   return (
     <header className="header">
       <h1>VESELKA</h1>
-      <Button text="Začít" onClick={handleClick} />
-      <Link to="/edit">Edituj</Link>
-      <Link to="/">Domů</Link>
+      <div className="links">
+        <Button className="buttonStart" text="Začít" onClick={handleClick} />
+        <Link className="link" to="/edit">
+          Edituj
+        </Link>
+        <Link className="link" to="/">
+          Domů
+        </Link>
+      </div>
     </header>
   );
 };

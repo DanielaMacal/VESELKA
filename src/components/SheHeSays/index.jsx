@@ -6,7 +6,7 @@ export const SheHeSays = (props) => {
     <>
       <h2>ONA řekne / ON řekne</h2>
       <div>
-        <h3 className="bride">{props.bride}</h3>
+        {bride && <h3 className="bride">{props.bride}</h3>}
         <p className="brideAbout">{props.brideAbout}</p>
         <img className="bridePicture" src={props.bridePicture} />
       </div>

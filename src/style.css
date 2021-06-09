@@ -1,10 +1,48 @@
+/* barvy dle palety: #fae1de, #e8b7b5, #939499, #aab5b0, #c7d1c9, #e3e3dc */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 html {
   font-family: 'Raleway', sans-serif;
   color: black;
+  background-color: #c7d1c983;
+  max-height: 100%;
+}
+
+button {
+  background-color: #aab5b0;
+  color: white;
+  border: 3px solid #aab5b0;
+  /* box-shadow: 0 0 7px rgba(128, 128, 128, 0.651); */
+  border-radius: 30px;
+  padding: 8px 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 590;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 18px;
+  width: 200px;
+}
+button:hover,
+button:focus {
+  background-color: #fae1de;
+  color: #939499;
+}
+
+.landingPage {
+  margin: 50px auto;
+
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.651);
+  max-width: 1400px;
 }

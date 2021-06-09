@@ -7,17 +7,19 @@ export const Food = (props) => {
       <div>
         <h3 className="foodDetails">MENU</h3>
         <ul>
-          <li>Předkrm: {props.starter}</li>
-          <li>Hlavní chod I.var.: {props.main}</li>
-          <li>Hlavní chod II.var.: {props.main2}</li>
-          <li>Dezert: {props.desert}</li>
+          {starter && <li>Předkrm: {props.starter}</li>}
+          {main && <li>Hlavní chod I.var.: {props.main}</li>}
+          {main2 && <li>Hlavní chod II.var.: {props.main2}</li>}
+          {desert && <li>Dezert: {props.desert}</li>}
           {'\n'}
-          <li>Večeře: {props.dinner}</li>
+          {dinner && <li>Večeře: {props.dinner}</li>}
           {'\n'}
-          <li>Nealkoholické nápoje: {props.drinksNonAlco}</li>
-          <li>Alkoholické nápoje: {props.drinksAlco}</li>
+          {drinksNonAlco && (
+            <li>Nealkoholické nápoje: {props.drinksNonAlco}</li>
+          )}
+          {drinksAlco && <li>Alkoholické nápoje: {props.drinksAlco}</li>}
           {'\n'}
-          <li>Ostatní: {props.others}</li>
+          {other && <li>Ostatní: {props.others}</li>}
         </ul>
       </div>
     </>
