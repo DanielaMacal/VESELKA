@@ -1,0 +1,19 @@
+.footer {
+  max-width: 1400px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #939499;
+
+  background-size: 100%;
+  background-position: top;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fae1de;
+  font-weight: 500;
+}

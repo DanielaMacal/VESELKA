@@ -1,0 +1,27 @@
+.reference {
+  max-width: 1400px;
+  min-height: 300px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #c7d1c9;
+  margin: 0;
+  padding: 20px;
+  color: #4e4f52;
+  text-align: center;
+}
+
+.allReferences {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.reference1,
+.reference2 {
+  width: 40%;
+  display: flex;
+  text-align: left;
+}
