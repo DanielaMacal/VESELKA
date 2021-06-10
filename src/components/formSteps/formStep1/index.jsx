@@ -1,30 +1,36 @@
 import React from 'react';
 import { Input } from '../../Inputs';
+import './style.css';
 
 export const FormStep1 = ({ errors, values, handleChange }) => {
   return (
-    <div className="formStep1">
-      <h1> Tvá veselka </h1>
-      <Input
-        className=""
-        type="text"
-        name="nickname"
-        placeholder="nickname"
-        value={values.nickname}
-        onChange={handleChange('nickname')}
-        error={errors.nickname}
-      />
+    <div className="container">
+      <div className="formStep1">
+        <h1> Tvá veselka </h1>
+        <div className="inputs1">
+          <Input
+            className="inputStep1"
+            type="text"
+            name="nickname"
+            placeholder="nickname"
+            value={values.nickname}
+            onChange={handleChange('nickname')}
+            error={errors.nickname}
+          />
 
-      <Input
-        className=""
-        type="password"
-        name="password"
-        placeholder="heslo"
-        value={values.password}
-        onChange={handleChange('password')}
-        error={errors.password}
-      />
-      {/* <Button className="" text="Edituj" onClick={() => {}} /> */}
+          <Input
+            className="inputStep1"
+            type="password"
+            name="password"
+            placeholder="heslo"
+            value={values.password}
+            onChange={handleChange('password')}
+            error={errors.password}
+          />
+
+          {/* <Button className="" text="Edituj" onClick={() => {}} /> */}
+        </div>
+      </div>
     </div>
   );
 };
