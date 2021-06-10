@@ -18,6 +18,10 @@ html {
   max-height: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 button {
   background-color: #aab5b0;
   color: white;
@@ -33,6 +37,7 @@ button {
   font-size: 18px;
   margin: 18px;
   width: 200px;
+  cursor: pointer;
 }
 button:hover,
 button:focus {
@@ -42,7 +47,9 @@ button:focus {
 
 .landingPage {
   margin: 50px auto;
-
   box-shadow: 0 0 7px rgba(128, 128, 128, 0.651);
   max-width: 1400px;
+}
+h2 {
+  margin-top: 0;
 }

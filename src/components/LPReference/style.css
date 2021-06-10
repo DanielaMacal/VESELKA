@@ -7,7 +7,7 @@
   flex-direction: column;
   background-color: #c7d1c9;
   margin: 0;
-  padding: 20px;
+  padding: 50px;
   color: #4e4f52;
   text-align: center;
 }
@@ -16,12 +16,36 @@
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .reference1,
 .reference2 {
-  width: 40%;
+  width: 47%;
   display: flex;
   text-align: left;
+}
+
+.avatar {
+  max-height: 100px;
+  border-radius: 100%;
+  align-items: right;
+  margin-bottom: 30px;
+}
+
+.name {
+  text-align: right;
+  margin-top: 15px;
+  padding-right: 15px;
+  font-style: italic;
+}
+
+.message {
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.quoMarks {
+  max-height: 15px;
+  padding-right: 3px;
 }

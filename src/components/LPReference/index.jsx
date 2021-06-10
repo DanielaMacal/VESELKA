@@ -1,5 +1,8 @@
 import React from 'react';
 import './style.css';
+import man from './img/man.jpg';
+import woman from './img/woman.jpg';
+import quoMarks from './img/uvozov.png';
 
 export const LPReference = () => {
   return (
@@ -7,21 +10,27 @@ export const LPReference = () => {
       <h2>Lidé zbožňují Veselky!...blablabla</h2>
       <div className="allReferences">
         <div className="reference1">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui saepe
-            ipsam veritatis explicabo culpa animi laudantium ut enim sit
-            doloribus
-          </p>
-          <image className="avatar1" src="img/man.jpg" alt="Vendelín" />
-          <p>Vendelín</p>
+          <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
+          <div className="referenceText">
+            <p className="message">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              saepe ipsam veritatis explicabo culpa animi laudantium ut enim sit
+              doloribus."
+            </p>
+            <p className="name">Vendelín</p>
+          </div>
+          <img className="avatar" src={man} alt="Vendelín" />
         </div>
         <div className="reference2">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui saepe
-            ipsam veritatis explicabo cul
-          </p>
-          <image className="avatar2" src="img/man.jpg" alt="Hromnice" />
-          <p>Hromnice</p>
+          <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
+          <div className="referenceText">
+            <p className="message">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              saepe ipsam veritatis explicabo cul."
+            </p>
+            <p className="name">Hromnice</p>
+          </div>
+          <img className="avatar" src={woman} alt="Hromnice" />
         </div>
       </div>
     </div>

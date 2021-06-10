@@ -1,22 +1,29 @@
 .entice {
   max-width: 1400px;
-  min-height: 300px;
+  min-height: 500px;
   margin: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   background-color: white;
   margin: 0;
-  padding: 20px;
+  padding: 50px;
   color: #939499;
+  justify-content: space-between;
 }
 
 .enticeText {
-  max-width: 50%;
+  max-width: 55%;
   flex-direction: column;
   text-align: left;
+  padding-right: 50px;
 }
 
 .enticeImg {
-  max-width: 35%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+h2.enticeText {
+  margin: 0;
 }
