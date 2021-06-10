@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import imageNahled from './img/imageNahled.png';
 
 export const LPEntice = () => {
   return (
@@ -15,7 +16,7 @@ export const LPEntice = () => {
       </div>
       <img
         className="enticeImg"
-        src="img/imageNahled.png"
+        src={imageNahled}
         alt="Náhled budoucích stránek"
       />
     </div>

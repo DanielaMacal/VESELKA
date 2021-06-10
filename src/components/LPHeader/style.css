@@ -7,7 +7,7 @@
   flex-direction: row;
   background-color: white;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .link,
@@ -15,16 +15,14 @@
   background-color: white;
   color: #aab5b0;
   border: 3px solid #aab5b0;
-  /* box-shadow: 0 0 7px rgba(128, 128, 128, 0.651); */
   border-radius: 30px;
-  padding: 8px 20px;
+  padding: 5px 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  font-weight: 590;
-  margin: 18px;
-  width: 120px;
+  font-size: 15px;
+  margin: auto 0;
+  width: 90px;
 }
 
 .link:hover,
@@ -38,8 +36,17 @@
   color: white;
 }
 
+.links {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1 {
   color: #aab5b0;
-  font-size: 40px;
-  margin-top: 17px;
+  font-size: 50px;
+  margin: auto;
+  margin-left: 0;
+  font: optional;
 }

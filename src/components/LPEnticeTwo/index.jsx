@@ -1,14 +1,11 @@
 import React from 'react';
 import './style.css';
+import entice2 from './img/entice2.jpg';
 
 export const LPEnticeTwo = () => {
   return (
     <div className="enticeTwo">
-      <img
-        className="enticeImg"
-        src="img/imageNahled.png"
-        alt="Nějaký obrázek"
-      />
+      <img className="enticeTwoImg" src={entice2} alt="Nějaký obrázek" />
       <div className="enticeTwoText">
         <h2>Vše, co potřebujete pro snadnější organizaci...blablabla</h2>
         <ul>
