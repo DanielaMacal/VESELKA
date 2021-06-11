@@ -1,1 +1,27 @@
-
+.formStep2 {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500rem;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding: 3rem;
+}
+.weddingPlace {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 2rem;
+}
+.weddingProgram {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.input {
+  margin: 1rem;
+  margin-left: 2rem;
+}

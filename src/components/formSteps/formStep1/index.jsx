@@ -6,10 +6,10 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
   return (
     <div className="container">
       <div className="formStep1">
-        <h1> Tvá veselka </h1>
+        <h2> Tvá veselka </h2>
         <div className="inputs1">
           <Input
-            className="inputStep1"
+            className="input"
             type="text"
             name="nickname"
             placeholder="nickname"
@@ -19,7 +19,7 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
           />
 
           <Input
-            className="inputStep1"
+            className="input"
             type="password"
             name="password"
             placeholder="heslo"
