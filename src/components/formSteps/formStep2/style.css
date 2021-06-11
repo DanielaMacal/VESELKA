@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 900rem;
+  max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
   padding: 3rem;
 }
@@ -23,5 +23,5 @@
 }
 .input {
   margin: 1rem;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
