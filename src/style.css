@@ -53,9 +53,10 @@ button:focus {
 
 h2 {
   margin-top: 0;
+  color: rgba(84, 82, 82, 0.651);
 }
 
-.inputStep1 {
+.input {
   width: 10rem;
   height: 2rem;
   margin: 0.5rem;
