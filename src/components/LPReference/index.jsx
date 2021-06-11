@@ -10,9 +10,9 @@ export const LPReference = () => {
       <h2>Lidé zbožňují Veselky!...blablabla</h2>
       <div className="allReferences">
         <div className="reference1">
-          <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
           <div className="referenceText">
             <p className="message">
+              <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
               saepe ipsam veritatis explicabo culpa animi laudantium ut enim sit
               doloribus."
@@ -22,14 +22,15 @@ export const LPReference = () => {
           <img className="avatar" src={man} alt="Vendelín" />
         </div>
         <div className="reference2">
-          <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
           <div className="referenceText">
             <p className="message">
+              <img className="quoMarks" src={quoMarks} alt="Uvozovky" />
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
               saepe ipsam veritatis explicabo cul."
             </p>
             <p className="name">Hromnice</p>
           </div>
+
           <img className="avatar" src={woman} alt="Hromnice" />
         </div>
       </div>

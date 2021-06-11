@@ -1,5 +1,5 @@
 .reference {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   min-height: 300px;
   margin: auto;
   display: flex;
@@ -28,6 +28,7 @@
 
 .avatar {
   max-height: 100px;
+  max-width: 100px;
   border-radius: 100%;
   align-items: right;
   margin-bottom: 30px;
@@ -36,16 +37,56 @@
 .name {
   text-align: right;
   margin-top: 15px;
-  padding-right: 15px;
+  padding-right: 20px;
   font-style: italic;
 }
 
 .message {
-  padding-right: 15px;
+  padding-right: 30px;
   padding-top: 5px;
 }
 
 .quoMarks {
-  max-height: 15px;
+  max-height: 20px;
   padding-right: 3px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .reference {
+    padding: 25px;
+  }
+  .quoMarks {
+    max-height: 15px;
+  }
+  .reference1,
+  .reference2 {
+    flex-direction: column;
+  }
+  .avatar {
+    order: 0;
+    margin-bottom: 20px;
+    margin-inline: auto;
+  }
+  .referenceText {
+    order: 1;
+  }
+  p.message {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .allReferences {
+    flex-direction: column;
+  }
+  p.message {
+    text-align: left;
+  }
+
+  .reference1,
+  .reference2 {
+    width: 100%;
+    padding-bottom: 25px;
+  }
 }

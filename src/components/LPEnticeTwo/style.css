@@ -1,6 +1,6 @@
 .enticeTwo {
   max-width: 1400px;
-  min-height: 500px;
+  max-height: 300px;
   margin: auto;
   display: flex;
   position: relative;
@@ -9,18 +9,68 @@
   margin: 0;
   padding: 50px;
   color: white;
-  justify-content: space-between;
 }
 
 .enticeTwoText {
-  max-width: 55%;
+  max-width: 60%;
   flex-direction: column;
   text-align: left;
   padding: 0;
 }
 
 .enticeTwoImg {
-  max-height: 400px;
+  height: 400px;
+  max-width: 40%;
+  position: relative;
   object-fit: cover;
   padding-right: 50px;
+}
+
+ul {
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .enticeTwo {
+    padding: 25px;
+  }
+  .enticeTwoTextP {
+    margin-top: 25px;
+  }
+
+  .enticeTwoImg {
+    height: 250px;
+    max-width: 50%;
+    padding-right: 25px;
+  }
+
+  ul {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .enticeTwo {
+    flex-direction: column;
+    max-height: 1000px;
+  }
+
+  .enticeTwoText {
+    max-width: 100%;
+    padding: 0;
+    order: 0;
+  }
+
+  .enticeTwoImg {
+    height: auto;
+    max-width: 100%;
+    padding-top: 25px;
+    order: 1;
+    padding-right: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
 }
