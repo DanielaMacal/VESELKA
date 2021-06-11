@@ -1,4 +1,10 @@
-/* barvy dle palety: #fae1de, #e8b7b5, #939499, #aab5b0, #c7d1c9, #e3e3dc */
+/* barvy dle palety: #fae1de, #e8b7b5, #939499, #aab5b0, #c7d1c9, #e3e3dc 
+
+@media (max-width: 1199px) and (min-width: 992px)
+@media (max-width: 991px) and (min-width: 576px) 
+@media (max-width: 575px) and (min-width: 360px) 
+@media (max-width: 359px)
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
@@ -20,13 +26,17 @@ html {
 
 p {
   margin: 0;
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
 }
 
 button {
   background-color: #aab5b0;
   color: white;
   border: 3px solid #aab5b0;
-  /* box-shadow: 0 0 7px rgba(128, 128, 128, 0.651); */
   border-radius: 30px;
   padding: 8px 20px;
   text-align: center;
@@ -62,4 +72,49 @@ h2 {
   margin: 0.5rem;
   border-color: #aab5b0;
   border-width: 1px;
+}
+
+/* @media only screen and (max-width: 1199px) {
+  .landingPage {
+    max-width: 500px;
+  }
+  .header {
+    flex-direction: column;
+  }
+} */
+
+@media only screen and (max-width: 1199px) {
+  .landingPage {
+    max-width: 1149px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .landingPage {
+    max-width: 941px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .landingPage {
+    max-width: 525px;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 }

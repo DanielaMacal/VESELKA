@@ -1,6 +1,6 @@
 .entice {
-  max-width: 1400px;
-  min-height: 500px;
+  /* max-width: 1400px; */
+  max-height: 400px;
   margin: auto;
   display: flex;
   position: relative;
@@ -13,17 +13,58 @@
 }
 
 .enticeText {
-  max-width: 55%;
+  max-width: 60%;
   flex-direction: column;
   text-align: left;
   padding-right: 50px;
 }
 
 .enticeImg {
-  max-height: 400px;
+  height: 400px;
+  max-width: 40%;
+  position: relative;
   object-fit: cover;
 }
 
 h2.enticeText {
   margin: 0;
+}
+.enticeTextP {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .entice {
+    padding: 25px;
+  }
+  .enticeTextP {
+    margin-top: 25px;
+  }
+
+  .enticeImg {
+    height: 250px;
+    max-width: 50%;
+  }
+
+  .enticeText {
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .entice {
+    flex-direction: column;
+    max-height: 1000px;
+  }
+
+  .enticeText {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .enticeImg {
+    height: auto;
+    max-width: 100%;
+    padding-top: 25px;
+  }
 }

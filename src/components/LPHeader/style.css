@@ -1,5 +1,5 @@
 .header {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   height: 80px;
   margin: auto;
   display: flex;
@@ -48,5 +48,49 @@ h1 {
   font-size: 50px;
   margin: auto;
   margin-left: 0;
-  font: optional;
+}
+
+@media only screen and (max-width: 1199px) {
+  .links {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    padding: 0 25px;
+  }
+  .links {
+    width: 45%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  .header {
+    padding: 0 25px;
+  }
+  .links {
+    width: 55%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    height: 150px;
+    padding: 25px;
+  }
+  .links {
+    padding-top: 25px;
+    width: 100%;
+  }
+  h1 {
+    margin: auto;
+  }
 }
