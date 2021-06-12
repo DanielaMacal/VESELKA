@@ -26,7 +26,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('brideAbout')}
           />
           <Input
-            className="input"
+            className="input2"
             type="file"
             name="bridePicture"
             label="foto nevěsty"
@@ -57,7 +57,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('groomAbout')}
           />
           <Input
-            className="input"
+            className="input2"
             type="file"
             name="groomPicture"
             label="foto ženicha"
