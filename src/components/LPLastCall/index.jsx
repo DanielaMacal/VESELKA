@@ -14,10 +14,7 @@ export const LPLastCall = () => {
 
   return (
     <div className="lastCall">
-      <h2>
-        Vytvořte si krásnou a přehlednou stránku pro Vaši svatbu i
-        Vy...blablabla
-      </h2>
+      <h2>Vytvořte si krásnou a přehlednou stránku pro Vaši VESELKU i Vy.</h2>
       <Button text="Začít plánovat" onClick={handleClick} />
     </div>
   );

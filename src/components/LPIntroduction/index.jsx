@@ -14,7 +14,7 @@ export const LPIntroduction = () => {
 
   return (
     <div className="introdution">
-      <h2>Vytvořte si web pro svou svatbu...blablabla</h2>
+      <h2>Vytvořte si osobní web pro svou VESELKU.</h2>
       <Button text="Začít plánovat" onClick={handleClick} />
     </div>
   );
