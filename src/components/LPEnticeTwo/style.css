@@ -1,6 +1,6 @@
 .enticeTwo {
   max-width: 1400px;
-  max-height: 300px;
+  max-height: 1000px;
   margin: auto;
   display: flex;
   position: relative;
@@ -8,6 +8,10 @@
   background-color: #939499;
   margin: 0;
   padding: 50px;
+  color: white;
+}
+
+.enticeTwoH2 {
   color: white;
 }
 
