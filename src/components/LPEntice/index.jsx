@@ -6,12 +6,15 @@ export const LPEntice = () => {
   return (
     <div className="entice">
       <div className="enticeText">
-        <h2>Informace o Vaší svatbě na jednom místě...blablabla</h2>
+        <h2>Informace o Vaší svatbě na jednom místě.</h2>
         <p className="enticeTextP">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          explicabo officia natus provident eos sunt adipisci tenetur rem
-          maiores vitae, vel modi, voluptates nam veniam, doloribus consequatur
-          maxime obcaecati optio?
+          Vytvořte si osobní web pro svou svatbu.
+          <br />
+          Díky tomu budete mít všechny informace pohromadě a jednuše je budete
+          moct sdílet se svými blízkými, se kterými chcete trávit svůj velký
+          den.
+          <br />
+          Web naplníte přesně těmi informacemi, které potřebujete.
         </p>
       </div>
       <img
