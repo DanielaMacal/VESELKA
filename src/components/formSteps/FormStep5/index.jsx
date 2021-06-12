@@ -1,13 +1,14 @@
 import React from 'react';
 import { Input } from '../../Inputs';
+import './style.css';
 
 export const FormStep5 = ({ setFieldValue }) => {
   return (
     <div className="formStep5">
+      <h2>Sem přidej svatební oznámení</h2>
       <div className="weddingAnnouncement">
-        <h1>Sem přidej svatební oznámení</h1>
         <Input
-          className=""
+          className="input"
           type="file"
           name="weddingAnnouncementPicture"
           label="svatební oznámení"

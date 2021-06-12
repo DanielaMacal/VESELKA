@@ -1,0 +1,29 @@
+.formStep5 {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500rem;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+.weddingAnnouncement {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin-right: 9rem;
+}
+
+h2 {
+  margin: 20px;
+}
+p {
+  margin-bottom: 20px;
+}
