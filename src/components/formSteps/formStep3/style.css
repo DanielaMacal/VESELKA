@@ -31,3 +31,23 @@ h2 {
 p {
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .input {
+    margin: 0.3rem;
+    margin-left: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .weddingFood {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    margin: 1rem;
+  }
+}
