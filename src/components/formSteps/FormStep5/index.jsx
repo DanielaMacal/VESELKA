@@ -8,7 +8,7 @@ export const FormStep5 = ({ setFieldValue }) => {
       <h2>Sem přidej svatební oznámení</h2>
       <div className="weddingAnnouncement">
         <Input
-          className="input"
+          className="input2"
           type="file"
           name="weddingAnnouncementPicture"
           label="svatební oznámení"
