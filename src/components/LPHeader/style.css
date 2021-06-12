@@ -83,14 +83,16 @@ h1 {
 @media only screen and (max-width: 575px) {
   .header {
     flex-direction: column;
-    height: 150px;
+    height: 145px;
     padding: 25px;
   }
   .links {
     padding-top: 25px;
-    width: 100%;
+    width: 70%;
+    margin: auto;
   }
   h1 {
+    font-size: 40px;
     margin: auto;
   }
 }

@@ -7,7 +7,9 @@ export const LPEnticeTwo = () => {
     <div className="enticeTwo">
       <img className="enticeTwoImg" src={entice2} alt="Nějaký obrázek" />
       <div className="enticeTwoText">
-        <h2>Vše, co potřebujete pro snadnější organizaci...blablabla</h2>
+        <h2 className="enticeTwoH2">
+          Vše, co potřebujete pro snadnější organizaci...blablabla
+        </h2>
         <ul>
           <li>Bla 1</li>
           <li>Bla 2</li>
