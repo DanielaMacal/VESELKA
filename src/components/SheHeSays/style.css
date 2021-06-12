@@ -1,0 +1,51 @@
+.sheHeSays {
+  display: flex;
+  background-color: #c7d1c983;
+  max-height: 1000px;
+  padding: 50px;
+  flex-direction: column;
+  text-align: center;
+  color: rgba(84, 82, 82, 0.651);
+}
+
+.bridePicture,
+.groomPicture {
+  height: 320px;
+  width: 290px;
+  object-fit: cover;
+  order: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.brideAbout,
+.groomAbout,
+.bride,
+.groom {
+  max-width: 290px;
+}
+
+.bride,
+.groom {
+  padding-top: 30px;
+}
+
+.brideAbout,
+.groomAbout {
+  padding-bottom: 0;
+}
+
+.heart {
+  max-height: 40px;
+  margin-top: 140px;
+}
+
+.sheHe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-inline: auto;
+  padding-top: 30px;
+  text-align: left;
+}

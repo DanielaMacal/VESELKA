@@ -1,75 +1,94 @@
 import React from 'react';
+import { WeddingAnnouncement } from '../WeddingAnnouncement';
 import './style.css';
 
 export const Details = (props) => {
   return (
-    <>
-      <h2>Detaily</h2>
-      <div>
-        <h3 className="ourWeddingDetails">Naše svatba</h3>
-        <ul>
-          <li>{props.date}</li>
-          <li>{props.weddingPlace}</li>
-          <li>{props.celebrationPlace}</li>
-        </ul>
-        <h3 className="placeWeddingDetails">Místo svatby</h3>
+    <div
+      className="details"
+      style={{ backgroundColor: props.weddingAnnouncementPicture }}
+    >
+      <h2 className="detailsH2">Detaily</h2>
+      <div className="weddingInfo">
+        <h3 className="ourWeddingDetails">Datum naší svatby</h3>
+        <p>{props.date}</p>
+        <h3 className="placeWeddingDetails">Místo naší svatby</h3>
         <p>{props.weddingPlace}</p>
-        <h3 className="celebrationWeddingDetails">Místo oslav</h3>
+        <h3 className="celebrationWeddingDetailsPlace">Místo oslav</h3>
         <p>{props.celebrationPlace}</p>
-        <h3 className="celebrationWeddingDetails">Program naší svatby</h3>
-        <ul>
-          {timeFrom1 && (
-            <li>
-              {props.timeFrom1} - {props.timeTo1}: {props.program1}
-            </li>
-          )}
-          {timeFrom2 && (
-            <li>
-              {props.timeFrom2} - {props.timeTo2}: {props.program2}
-            </li>
-          )}
-          {timeFrom3 && (
-            <li>
-              {props.timeFrom3} - {props.timeTo3}: {props.program3}
-            </li>
-          )}
-          {timeFrom4 && (
-            <li>
-              {props.timeFrom4} - {props.timeTo4}: {props.program4}
-            </li>
-          )}
-          {timeFrom5 && (
-            <li>
-              {props.timeFrom5} - {props.timeTo5}: {props.program5}
-            </li>
-          )}
-          {timeFrom6 && (
-            <li>
-              {props.timeFrom6} - {props.timeTo6}: {props.program6}
-            </li>
-          )}
-          {timeFrom7 && (
-            <li>
-              {props.timeFrom7} - {props.timeTo7}: {props.program7}
-            </li>
-          )}
-          {timeFrom8 && (
-            <li>
-              {props.timeFrom8} - {props.timeTo8}: {props.program8}
-            </li>
-          )}
-          {timeFrom9 && (
-            <li>
-              {props.timeFrom9} - {props.timeTo9}: {props.program9}
-            </li>
-          )}
-          {timeFrom10 && (
-            <li>
-              {props.timeFrom10} - {props.timeTo10}: {props.program10}
-            </li>
-          )}
-        </ul>
       </div>
-    </>
+      <div className="program">
+        <h3 className="celebrationWeddingDetails">Program naší svatby</h3>
+        <div className="weddingProgramDet">
+          {props.timeFrom1 && (
+            <h3>
+              {props.timeFrom1} - {props.timeTo1}
+            </h3>
+          )}
+          {props.program1 && <p>{props.program1}</p>}
+          {props.timeFrom2 && (
+            <h3>
+              {props.timeFrom2} - {props.timeTo2}
+            </h3>
+          )}
+          {props.program2 && <p> {props.program2}</p>}
+          {props.timeFrom3 && (
+            <h3>
+              {props.timeFrom3} - {props.timeTo3}
+            </h3>
+          )}
+          {props.program3 && <p> {props.program3}</p>}
+
+          {props.timeFrom4 && (
+            <h3>
+              {props.timeFrom4} - {props.timeTo4}
+            </h3>
+          )}
+          {props.program4 && <p> {props.program4}</p>}
+
+          {props.timeFrom5 && (
+            <h3>
+              {props.timeFrom5} - {props.timeTo5}
+            </h3>
+          )}
+          {props.program5 && <p> {props.program5}</p>}
+
+          {props.timeFrom6 && (
+            <h3>
+              {props.timeFrom6} - {props.timeTo6}
+            </h3>
+          )}
+          {props.program6 && <p> {props.program6}</p>}
+
+          {props.timeFrom7 && (
+            <h3>
+              {props.timeFrom7} - {props.timeTo7}
+            </h3>
+          )}
+          {props.program7 && <p> {props.program7}</p>}
+
+          {props.timeFrom8 && (
+            <h3>
+              {props.timeFrom8} - {props.timeTo8}
+            </h3>
+          )}
+          {props.program8 && <p> {props.program8}</p>}
+
+          {props.timeFrom9 && (
+            <h3>
+              {props.timeFrom9} - {props.timeTo9}
+            </h3>
+          )}
+          {props.program9 && <p> {props.program9}</p>}
+
+          {props.timeFrom10 && (
+            <h3>
+              {props.timeFrom10} - {props.timeTo10}
+            </h3>
+          )}
+          {props.program10 && <p> {props.program10}</p>}
+        </div>
+      </div>
+    </div>
   );
 };

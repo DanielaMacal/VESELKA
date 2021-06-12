@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  background-image: url('img/food.jpg');
+  background-size: cover;
+  max-height: 1500px;
+  padding: 50px;
+  text-align: center;
+  flex-direction: column;
+  color: rgba(84, 82, 82, 0.651);
+}
+
+.menuBG {
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 50px;
+  padding-bottom: 30px;
+}
+
+h3.foodDetails {
+  margin-bottom: 50px;
+}

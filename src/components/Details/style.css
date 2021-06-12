@@ -1,0 +1,41 @@
+.details {
+  display: flex;
+  background-color: white;
+  /* background-color: rgba(255, 255, 255, 0.397); */
+  max-height: 1500px;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  color: rgba(84, 82, 82, 0.651);
+}
+.weddingInfo {
+  max-height: 400px;
+  padding: 50px;
+  padding-bottom: 30px;
+  background-color: #939499d2;
+  color: white;
+}
+
+.program {
+  max-height: 700px;
+  padding: 50px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.weddingProgramDet {
+  column-count: 2;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+h3.celebrationWeddingDetails {
+  padding-bottom: 50px;
+}
+
+.detailsH2 {
+  padding: 50px;
+}
