@@ -39,8 +39,8 @@ export const PreviewPage = () => {
   }
 
   return (
-    <>
+    <div className="previewPage">
       <Preview {...state} />
-    </>
+    </div>
   );
 };

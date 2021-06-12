@@ -1,0 +1,14 @@
+.weddingAnnouncement {
+  padding: 50px;
+  max-height: 1000px;
+  display: flex;
+  background-color: white;
+  /* background-color: #939499; */
+}
+
+.weddingAnnouncementPicture {
+  max-height: 800px;
+  max-width: 1000px;
+  position: relative;
+  margin-inline: auto;
+}

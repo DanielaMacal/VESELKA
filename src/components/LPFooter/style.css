@@ -14,6 +14,10 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  color: #fae1de;
+
   font-weight: 500;
+}
+
+.footerP {
+  color: #fae1de;
 }
