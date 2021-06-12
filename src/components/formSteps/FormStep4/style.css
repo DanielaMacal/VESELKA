@@ -1,0 +1,38 @@
+.formStep4 {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500rem;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+.newlyweds {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin-right: 9rem;
+}
+.mladomanzelia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h2 {
+  margin: 20px;
+}
+p {
+  margin-bottom: 20px;
+}
+
+.input2 {
+  width: 20px;
+  height: 20px;
+}

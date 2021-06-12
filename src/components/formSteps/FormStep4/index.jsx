@@ -1,15 +1,16 @@
 import React from 'react';
 import { Input } from '../../Inputs';
+import './style.css';
 
 export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
   return (
     <div className="formStep4">
       <div className="newlyweds">
-        <h1>Sem přidej informace o novomanželích</h1>
-        <div>
-          <p>Nevěsta</p>
+        <h2>Sem přidej informace o novomanželích</h2>
+        <p>Nevěsta</p>
+        <div className="mladomanzelia">
           <Input
-            className=""
+            className="input"
             type="text"
             name="bride"
             label="jméno nevěsty"
@@ -17,7 +18,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('bride')}
           />
           <Input
-            className=""
+            className="input"
             type="text"
             name="brideAbout"
             label="o nevěstě"
@@ -25,7 +26,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('brideAbout')}
           />
           <Input
-            className=""
+            className="input"
             type="file"
             name="bridePicture"
             label="foto nevěsty"
@@ -36,10 +37,11 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             }}
           />
         </div>
-        <div>
-          <p>Ženich</p>
+        <p>Ženích</p>
+
+        <div className="mladomanzelia">
           <Input
-            className=""
+            className="input"
             type="text"
             name="groom"
             label="jméno nevěsty"
@@ -47,7 +49,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('groom')}
           />
           <Input
-            className=""
+            className="input"
             type="text"
             name="groomAbout"
             label="o ženichovi"
@@ -55,7 +57,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             onChange={handleChange('groomAbout')}
           />
           <Input
-            className=""
+            className="input"
             type="file"
             name="groomPicture"
             label="foto ženicha"
