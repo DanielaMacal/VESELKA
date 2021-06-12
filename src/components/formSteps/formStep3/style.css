@@ -8,20 +8,26 @@
   align-items: center;
   max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding: 3rem;
+  padding: 5rem;
   flex-wrap: wrap;
 }
 .weddingFood {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 518px;
+  margin-right: 9rem;
 }
-.input {
-  margin: 1rem;
-  margin-left: 2rem;
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.inputs3 {
-  margin: 3px;
+h2 {
+  margin: 20px;
+}
+p {
+  margin-bottom: 20px;
 }
