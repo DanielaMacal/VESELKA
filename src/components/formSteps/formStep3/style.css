@@ -1,0 +1,27 @@
+.formStep3 {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500rem;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+.weddingFood {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.input {
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.inputs3 {
+  margin: 3px;
+}
