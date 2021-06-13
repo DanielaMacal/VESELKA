@@ -1,5 +1,5 @@
 .formStep4 {
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -77,16 +77,9 @@ p {
 }
 
 @media (max-width: 699px) {
-  .mladomanzelia {
+  .rada {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin: auto;
-  }
-  .input2 {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin: 1rem;
   }
 }
