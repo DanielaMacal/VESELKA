@@ -3,16 +3,21 @@
   border-radius: 1rem;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 40rem;
   height: 25rem;
   box-shadow: 2px 2px 5px #aab5b0;
-}
-.containerEditPage {
-  display: flex;
   flex-direction: column;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.containerEditpage {
+  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

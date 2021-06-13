@@ -6,7 +6,7 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
   return (
     <div className="container">
       <div className="formStep1">
-        <h2> Tvá veselka </h2>
+        <h2> Tvá VESELKA </h2>
         <div className="inputs1">
           <Input
             className="input"
