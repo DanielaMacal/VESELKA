@@ -6,40 +6,6 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
   return (
     <div className="formStep4">
       <div className="container4">
-<<<<<<< HEAD
-        <h2>Sem přidej informace o novomanželích</h2>
-        <p>Nevěsta</p>
-        <div className="mladomanzelia">
-          <Input
-            className="input"
-            type="text"
-            name="bride"
-            label="Jméno nevěsty"
-            value={values.bride}
-            onChange={handleChange('bride')}
-          />
-          <Input
-            className="input"
-            type="text"
-            name="brideAbout"
-            label="O nevěstě"
-            value={values.brideAbout}
-            onChange={handleChange('brideAbout')}
-          />
-          <Input
-            className="input2"
-            type="file"
-            name="bridePicture"
-            label="Foto nevěsty"
-            value={undefined}
-            accept=".jpg"
-            onChange={(event) => {
-              setFieldValue('bridePicture', event.currentTarget.files[0]);
-            }}
-          />
-        </div>
-        <p>Ženich</p>
-=======
         <h2 class="info4">Sem přidej informace o novomanželích</h2>
 
         <div className="rada">
@@ -91,7 +57,6 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
               value={values.groomAbout}
               onChange={handleChange('groomAbout')}
             />
->>>>>>> origin/main
 
             <Input
               className="input3"
