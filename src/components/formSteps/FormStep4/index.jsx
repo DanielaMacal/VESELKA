@@ -6,7 +6,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
   return (
     <div className="formStep4">
       <div className="container4">
-        <h2>Sem přidej informace o novomanželích</h2>
+        <h2 class="info4">Sem přidej informace o novomanželích</h2>
 
         <div className="rada">
           <div className="mladomanzelia">
@@ -26,8 +26,9 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
               value={values.brideAbout}
               onChange={handleChange('brideAbout')}
             />
+
             <Input
-              className="input2"
+              className="input3"
               type="file"
               name="bridePicture"
               label="Foto nevěsty"
@@ -56,8 +57,9 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
               value={values.groomAbout}
               onChange={handleChange('groomAbout')}
             />
+
             <Input
-              className="input2"
+              className="input3"
               type="file"
               name="groomPicture"
               label="Foto ženicha"
