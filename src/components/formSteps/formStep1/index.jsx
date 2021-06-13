@@ -9,7 +9,7 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
         <h2> Tvá VESELKA </h2>
         <div className="inputs1">
           <Input
-            className="input"
+            className="input7"
             type="text"
             name="nickname"
             placeholder="nickname"
@@ -19,7 +19,7 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
           />
 
           <Input
-            className="input"
+            className="input7"
             type="password"
             name="password"
             placeholder="heslo"
