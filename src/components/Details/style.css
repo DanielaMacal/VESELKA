@@ -29,7 +29,7 @@
 }
 
 p {
-  padding-bottom: 20px;
+  padding: 0;
 }
 
 h3.celebrationWeddingDetails {
@@ -37,5 +37,30 @@ h3.celebrationWeddingDetails {
 }
 
 .detailsH2 {
-  padding: 50px;
+  padding: 30px 50px 50px 50px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .details {
+    padding: 25px 25px 5px 25px;
+  }
+  .detailsH2 {
+    padding: 0 0 25px 0;
+  }
+  .weddingInfo {
+    padding: 25px 25px 5px 25px;
+  }
+  .program {
+    padding: 25px 0 0 0;
+  }
+  h3.celebrationWeddingDetails {
+    padding-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .weddingProgramDet {
+    column-count: 1;
+  }
 }

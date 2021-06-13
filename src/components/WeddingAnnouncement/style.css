@@ -1,14 +1,37 @@
 .weddingAnnouncement {
-  padding: 50px;
   max-height: 1000px;
   display: flex;
   background-color: white;
-  /* background-color: #939499; */
+  margin: 0;
 }
 
 .weddingAnnouncementPicture {
   max-height: 800px;
-  max-width: 1000px;
+  max-width: 80%;
   position: relative;
   margin-inline: auto;
+  object-fit: cover;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .weddingAnnouncementPicture {
+    max-height: 800px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .weddingAnnouncementPicture {
+    max-height: 700px;
+    max-width: 90%;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .weddingAnnouncementPicture {
+    max-height: 600px;
+    max-width: 90%;
+    padding: 25px;
+  }
 }

@@ -6,7 +6,7 @@ export const LPEntice = () => {
   return (
     <div className="entice">
       <div className="enticeText">
-        <h2>Informace o Vaší svatbě na jednom místě.</h2>
+        <h2 className="enticeH2">Informace o Vaší svatbě na jednom místě.</h2>
         <p className="enticeTextP">
           Vytvořte si osobní web pro svou svatbu.
           <br />

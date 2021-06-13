@@ -7,7 +7,7 @@ import quoMarks from './img/uvozov.png';
 export const LPReference = () => {
   return (
     <div className="reference">
-      <h2>Lidé zbožňují VESELKY!</h2>
+      <h2 className="referenceH2">Lidé zbožňují VESELKY!</h2>
       <div className="allReferences">
         <div className="reference1">
           <div className="referenceText">

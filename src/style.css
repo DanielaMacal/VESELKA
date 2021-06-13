@@ -24,13 +24,21 @@ html {
   max-height: 100%;
 }
 
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
 p {
   margin: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 li {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 button {
@@ -64,7 +72,6 @@ button:focus {
 h2,
 h3 {
   margin-top: 0;
-  color: rgba(84, 82, 82, 0.651);
 }
 
 .input {
@@ -79,6 +86,17 @@ h3 {
 @media only screen and (max-width: 1199px) {
   .landingPage {
     max-width: 1149px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  li {
+    font-size: 19px;
   }
 }
 
@@ -96,7 +114,7 @@ h3 {
   }
 
   li {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 

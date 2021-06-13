@@ -1,6 +1,6 @@
 .footer {
   /* max-width: 1400px; */
-  height: 80px;
+  max-height: 80px;
   margin: auto;
   display: flex;
   position: relative;
@@ -10,15 +10,27 @@
   background-size: 100%;
   background-position: top;
   margin: 0;
-  padding: 0 20px;
+  padding: 20px;
   justify-content: center;
   text-align: center;
   align-items: center;
-
-  font-weight: 500;
 }
 
 .footerP {
   color: #fae1de;
   padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footerP {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footerP {
+    font-size: 12px;
+  }
 }

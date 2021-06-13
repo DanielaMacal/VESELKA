@@ -16,7 +16,7 @@
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 .reference1,
@@ -27,8 +27,8 @@
 }
 
 .avatar {
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 120px;
+  max-width: 120px;
   border-radius: 100%;
   align-items: right;
   margin-bottom: 30px;
@@ -52,6 +52,10 @@
   padding-bottom: 5px;
 }
 
+.referenceH2 {
+  margin: 0;
+}
+
 @media only screen and (max-width: 991px) {
   .reference {
     padding: 25px;
@@ -73,6 +77,9 @@
   }
   p.message {
     padding-right: 0;
+  }
+  .allReferences {
+    padding-top: 25px;
   }
 }
 

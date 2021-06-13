@@ -12,7 +12,58 @@
   box-shadow: 0 0 7px rgba(128, 128, 128, 0.651);
   max-width: 1400px;
 }
-/* 
-p {
-  color: rgba(84, 82, 82, 0.651);
-} */
+
+@media only screen and (max-width: 1199px) {
+  .previewPage {
+    max-width: 1149px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  li {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .previewPage {
+    max-width: 941px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  li {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .previewPage {
+    max-width: 525px;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
