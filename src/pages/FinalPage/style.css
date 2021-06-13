@@ -1,15 +1,23 @@
 .finalPage {
-  margin-top: 3rem;
-  border-radius: 1rem;
+  margin: 3rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40rem;
-  min-height: 25rem;
+  max-width: 40rem;
+  max-height: 25rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding: 10rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+.final {
+  text-align: center;
+}
+.finalNazov {
+  margin-bottom: 2rem;
 }
 @media (max-width: 700px) {
   .finalPage {

@@ -9,17 +9,17 @@ export const FinalPage = () => {
 
   return (
     <div className="finalPage">
-      <h2>Vaša stránka bola vytvorená!</h2>
-      <p>
-        Tento odkaz rozošlete svojim hosťom:{' '}
+      <h2 className="finalNazov">Vaše stránka byla vytvořena!</h2>
+      <p className="final">
+        Tento odkaz rozešlete svým hostům:{' '}
         <a
           href={`https://main--gifted-nightingale-e3538a.netlify.app/preview/${id}`}
         >
           svatebni web
         </a>
       </p>
-      <p>
-        Toto je Vaše ID, uchovajte ho pre prípad editácie Vašej stránky: {id}
+      <p className="final">
+        Toto je Vaše ID, uchovejte ho pro případ editace vaší stránky: {id}
       </p>
 
       <Button
