@@ -8,6 +8,7 @@
   align-items: center;
   box-shadow: 2px 2px 5px #aab5b0;
   padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 .weddingPlace {
   display: flex;
@@ -37,13 +38,13 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
-  .input {
-    margin: 0.3rem;
-    margin-left: 0.8rem;
-  }
+.popis {
+  margin-bottom: 2rem;
 }
 @media (max-width: 576px) {
+  .formStep2 {
+    padding-left: 0;
+  }
   .weddingPlace {
     display: flex;
     align-items: flex-end;
@@ -54,9 +55,5 @@ h2 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-  }
-
-  .input {
-    margin: 1rem;
   }
 }

@@ -39,7 +39,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
           />
         </div>
 
-        <h2>Popište program Vaší svatby</h2>
+        <h2 className="popis">Popište program Vaší svatby</h2>
 
         <div className="weddingProgram">
           <Input
