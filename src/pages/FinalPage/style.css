@@ -7,7 +7,19 @@
   justify-content: center;
   align-items: center;
   width: 40rem;
-  height: 25rem;
+  min-height: 25rem;
   box-shadow: 2px 2px 5px #aab5b0;
   padding: 10rem;
+}
+@media (max-width: 700px) {
+  .finalPage {
+    max-width: 30rem;
+    padding: 6rem;
+  }
+}
+@media (max-width: 550px) {
+  .finalPage {
+    max-width: 25rem;
+    padding: 3rem;
+  }
 }
