@@ -6,7 +6,7 @@ export const FormStep5 = ({ setFieldValue }) => {
   return (
     <div className="formStep5">
       <h2>Sem přidej svatební oznámení</h2>
-      <div className="weddingAnnouncement">
+      <div className="container5">
         <Input
           className="input2"
           type="file"

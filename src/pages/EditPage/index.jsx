@@ -16,42 +16,44 @@ export const EditPage = () => {
       <LPHeader />
       <div className="editPage">
         <h2>Tvá VESELKA</h2>
-        <Formik
-          initialValues={{ weddingId: '', password: '' }}
-          onSubmit={(values) => {
-            history.push(`/edit/${values.weddingId}`);
-          }}
-        >
-          {({ values, errors, handleChange, handleSubmit }) => (
-            <>
-              <Input
-                className=""
-                type="text"
-                name="weddingId"
-                placeholder="Id svatby"
-                value={values.weddingId}
-                onChange={handleChange('weddingId')}
-                error={errors.weddingId}
-              />
+        <div className="containerEditpage">
+          <Formik
+            initialValues={{ weddingId: '', password: '' }}
+            onSubmit={(values) => {
+              history.push(`/edit/${values.weddingId}`);
+            }}
+          >
+            {({ values, errors, handleChange, handleSubmit }) => (
+              <>
+                <Input
+                  className="input"
+                  type="text"
+                  name="weddingId"
+                  placeholder="Id svatby"
+                  value={values.weddingId}
+                  onChange={handleChange('weddingId')}
+                  error={errors.weddingId}
+                />
 
-              <Input
-                className=""
-                type="password"
-                name="password"
-                placeholder="heslo"
-                value={values.password}
-                onChange={handleChange('password')}
-                error={errors.password}
-              />
+                <Input
+                  className="input"
+                  type="password"
+                  name="password"
+                  placeholder="heslo"
+                  value={values.password}
+                  onChange={handleChange('password')}
+                  error={errors.password}
+                />
 
-              <Button
-                onClick={() => handleSubmit()}
-                text="Edituj"
-                type="submit"
-              />
-            </>
-          )}
-        </Formik>
+                <Button
+                  onClick={() => handleSubmit()}
+                  text="Edituj"
+                  type="submit"
+                />
+              </>
+            )}
+          </Formik>
+        </div>
       </div>
     </>
   );
