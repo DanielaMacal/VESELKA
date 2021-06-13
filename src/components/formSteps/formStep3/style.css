@@ -42,6 +42,10 @@
 .popis {
   margin: 2rem;
 }
-
-@media (max-width: 699px) {
+@media (max-width: 672px) {
+  .weddingFood {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
