@@ -17,7 +17,7 @@ export const LPHeader = () => {
       <div className="links">
         <Button className="buttonStart" text="Začít" onClick={handleClick} />
         <Link className="link" to="/edit">
-          Edituj
+          Editovat
         </Link>
         <Link className="link" to="/">
           Domů

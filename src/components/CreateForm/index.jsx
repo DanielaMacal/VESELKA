@@ -83,11 +83,11 @@ export const CreateForm = (props) => {
             })[step]
           }
           {step > 0 && (
-            <Button onClick={() => setStep((s) => s - 1)} text="zpet" />
+            <Button onClick={() => setStep((s) => s - 1)} text="Zpět" />
           )}
           <Button
             onClick={() => handleSubmit()}
-            text={isLastStep() ? 'uložiť' : 'ďalej'}
+            text={isLastStep() ? 'Uložit' : 'Pokračovat'}
             type="submit"
           />
         </>

@@ -6,8 +6,7 @@ import './style.css';
 export const FormStep3 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep3">
-      <h2 className="popis3">Sem přidej Vaše svatební menu</h2>
-      <p> Bla bla bla bla bla</p>
+      <h2>Sem přidej Vaše svatební menu</h2>
       <div className="container3">
         <div className="weddingFood">
           <div className="inputs1">

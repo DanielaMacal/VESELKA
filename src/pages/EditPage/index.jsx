@@ -47,7 +47,7 @@ export const EditPage = () => {
 
                 <Button
                   onClick={() => handleSubmit()}
-                  text="Edituj"
+                  text="Editovat"
                   type="submit"
                 />
               </>
