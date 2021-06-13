@@ -5,7 +5,7 @@ import './style.css';
 export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
   return (
     <div className="formStep4">
-      <div className="newlyweds">
+      <div className="container4">
         <h2>Sem přidej informace o novomanželích</h2>
         <p>Nevěsta</p>
         <div className="mladomanzelia">

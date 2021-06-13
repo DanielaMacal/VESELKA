@@ -9,16 +9,14 @@
   max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
   padding: 5rem;
-  flex-wrap: wrap;
 }
-.newlyweds {
+.container4 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  margin-right: 9rem;
+  width: 518px;
 }
 .mladomanzelia {
   display: flex;
@@ -33,7 +31,7 @@ p {
 }
 .input2 {
   color: transparent;
-  margin-top: 18px;
+  margin-top: 9px;
   margin-left: 20px;
 }
 .input2::-webkit-file-upload-button {
@@ -63,4 +61,19 @@ p {
 }
 .input2 :active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+@media (max-width: 699px) {
+  .mladomanzelia {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: auto;
+  }
+  .input2 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 1rem;
+  }
 }

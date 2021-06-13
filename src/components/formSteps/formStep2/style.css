@@ -8,7 +8,7 @@
   align-items: center;
   max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding: 3rem;
+  padding-right: 5rem;
 }
 .weddingPlace {
   display: flex;
@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
   width: 518px;
-  margin-right: 9rem;
+  margin: 3rem;
 }
 @media (max-width: 768px) {
   .input {
