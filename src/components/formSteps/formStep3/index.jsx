@@ -6,10 +6,15 @@ import './style.css';
 export const FormStep3 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep3">
+<<<<<<< HEAD
       <h2>Sem přidej Vaše svatební menu</h2>
+=======
+      <h2 className="popis3">Sem přidej Vaše svatební menu</h2>
+      <p> Bla bla bla bla bla</p>
+>>>>>>> origin/main
       <div className="container3">
         <div className="weddingFood">
-          <div className="inputs">
+          <div className="inputs1">
             <Input
               className="input"
               type="text"
@@ -40,7 +45,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               error={errors.main2}
             />
           </div>
-          <div className="inputs">
+          <div className="inputs2">
             <Input
               className="input"
               type="text"
@@ -71,7 +76,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               error={errors.drinksNonAlco}
             />
           </div>
-          <div className="inputs">
+          <div className="inputs3">
             <Input
               className="input"
               type="text"

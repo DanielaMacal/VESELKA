@@ -1,20 +1,20 @@
 .formStep5 {
-  margin-top: 3rem;
-  border-radius: 1rem;
+  margin-top: 5rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding: 5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 .container5 {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  margin: auto;
 }
 
 h2 {
@@ -23,14 +23,21 @@ h2 {
 p {
   margin-bottom: 20px;
 }
-.input2 {
+.input5 {
   color: transparent;
+  width: 8rem;
+  margin: 1rem;
 }
-.input2::-webkit-file-upload-button {
+.input5::-webkit-file-upload-button {
   visibility: hidden;
 }
+<<<<<<< HEAD
 .input2::before {
   content: 'Nahrát soubor';
+=======
+.input5::before {
+  content: 'Nahraj súbor';
+>>>>>>> origin/main
   color: black;
   display: inline-block;
   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -45,13 +52,13 @@ p {
   font-weight: 700;
   font-size: 10pt;
 }
-.input2:hover::before {
+.input5:hover::before {
   border-color: black;
 }
-.input2:active {
+.input5:active {
   outline: 0;
 }
-.input2 :active::before {
+.input5 :active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 @media (max-width: 699px) {
@@ -61,7 +68,7 @@ p {
     flex-direction: column;
     margin: auto;
   }
-  .input2 {
+  .input5 {
     display: flex;
     align-items: flex-end;
     flex-direction: column;

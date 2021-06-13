@@ -15,8 +15,8 @@ export const EditPage = () => {
     <>
       <LPHeader />
       <div className="editPage">
-        <h2>Tvá VESELKA</h2>
         <div className="containerEditpage">
+          <h2>Tvá VESELKA</h2>
           <Formik
             initialValues={{ weddingId: '', password: '' }}
             onSubmit={(values) => {
@@ -26,7 +26,7 @@ export const EditPage = () => {
             {({ values, errors, handleChange, handleSubmit }) => (
               <>
                 <Input
-                  className="input"
+                  className="input7"
                   type="text"
                   name="weddingId"
                   placeholder="Id svatby"
@@ -36,7 +36,7 @@ export const EditPage = () => {
                 />
 
                 <Input
-                  className="input"
+                  className="input7"
                   type="password"
                   name="password"
                   placeholder="heslo"

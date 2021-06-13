@@ -1,22 +1,36 @@
 .editPage {
-  margin-top: 3rem;
-  border-radius: 1rem;
-  background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40rem;
-  height: 25rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  flex-direction: column;
+  background-image: url('img/pozadi.jpg');
+  opacity: 0.7;
+  margin: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-body {
-  justify-content: center;
-  align-items: center;
-}
+
 .containerEditpage {
-  flex-direction: column;
+  margin: 3rem;
+  background-color: #e9dddc;
+  opacity: 0.9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  width: 30rem;
+}
+.input7 {
+  width: 10rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-color: #aab5b0;
+  border-width: 1px;
+  color: rgba(84, 82, 82, 0.651);
 }
