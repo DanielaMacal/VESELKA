@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory, useParams } from 'react-router';
 import { Button } from '../../components/button';
+import './style.css';
 
 export const FinalPage = () => {
   const history = useHistory();
@@ -8,7 +9,7 @@ export const FinalPage = () => {
 
   return (
     <div className="finalPage">
-      <h1>Vaša stránka bola vytvorená!</h1>
+      <h2>Vaša stránka bola vytvorená!</h2>
       <p>
         Tento odkaz rozošlete svojim hosťom:{' '}
         <a

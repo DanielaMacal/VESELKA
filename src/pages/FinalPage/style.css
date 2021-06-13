@@ -1,0 +1,25 @@
+.finalPage {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  min-height: 25rem;
+  box-shadow: 2px 2px 5px #aab5b0;
+  padding: 10rem;
+}
+@media (max-width: 700px) {
+  .finalPage {
+    max-width: 30rem;
+    padding: 6rem;
+  }
+}
+@media (max-width: 550px) {
+  .finalPage {
+    max-width: 25rem;
+    padding: 3rem;
+  }
+}
