@@ -72,6 +72,13 @@ button:focus {
 h2,
 h3 {
   margin-top: 0;
+  color: rgba(84, 82, 82, 0.651);
+}
+p {
+  color: rgba(84, 82, 82, 0.651);
+}
+label {
+  color: rgba(84, 82, 82, 0.651);
 }
 
 .input {
