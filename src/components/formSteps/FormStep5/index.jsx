@@ -11,7 +11,7 @@ export const FormStep5 = ({ setFieldValue }) => {
           className="input2"
           type="file"
           name="weddingAnnouncementPicture"
-          label="svatební oznámení"
+          label="Svatební oznámení"
           value={undefined}
           accept=".jpg"
           onChange={(event) => {
