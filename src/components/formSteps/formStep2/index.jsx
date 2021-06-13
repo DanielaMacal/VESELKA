@@ -23,7 +23,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="weddingPlace"
-            label="miesto svadby"
+            label="místo svatby"
             value={values.weddingPlace}
             onChange={handleChange('weddingPlace')}
             error={errors.weddingPlace}
@@ -32,7 +32,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="celebrationPlace"
-            label="miesto oslavy"
+            label="místo oslavy"
             value={values.celebrationPlace}
             onChange={handleChange('celebrationPlace')}
             error={errors.celebrationPlace}
@@ -46,7 +46,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom1"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom1}
             onChange={handleChange('timeFrom1')}
             error={errors.timeFrom1}
@@ -55,7 +55,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo1"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo1}
             onChange={handleChange('timeTo1')}
             error={errors.timeTo1}
@@ -64,7 +64,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program1"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program1}
             onChange={handleChange('program1')}
             error={errors.program1}
@@ -75,7 +75,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom2"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom2}
             onChange={handleChange('timeFrom2')}
             error={errors.timeFrom2}
@@ -85,7 +85,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo2"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo2}
             onChange={handleChange('timeTo2')}
             error={errors.timeTo2}
@@ -95,7 +95,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program2"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program2}
             onChange={handleChange('program2')}
             error={errors.program2}
@@ -106,7 +106,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom3"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom3}
             onChange={handleChange('timeFrom3')}
             error={errors.timeFrom3}
@@ -116,7 +116,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo3"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo3}
             onChange={handleChange('timeTo3')}
             error={errors.timeTo3}
@@ -126,7 +126,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program3"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program3}
             onChange={handleChange('program3')}
             error={errors.program3}
@@ -137,7 +137,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom4"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom4}
             onChange={handleChange('timeFrom4')}
             error={errors.timeFrom4}
@@ -147,7 +147,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo4"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo4}
             onChange={handleChange('timeTo4')}
             error={errors.timeTo4}
@@ -157,7 +157,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program4"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program4}
             onChange={handleChange('program4')}
             error={errors.program4}
@@ -168,7 +168,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom5"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom5}
             onChange={handleChange('timeFrom5')}
             error={errors.timeFrom5}
@@ -178,7 +178,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo5"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo5}
             onChange={handleChange('timeTo5')}
             error={errors.timeTo5}
@@ -188,7 +188,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program5"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program5}
             onChange={handleChange('program5')}
             error={errors.program5}
@@ -199,7 +199,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom6"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom6}
             onChange={handleChange('timeFrom6')}
             error={errors.timeFrom6}
@@ -209,7 +209,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo6"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo6}
             onChange={handleChange('timeTo6')}
             error={errors.timeTo6}
@@ -219,7 +219,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program6"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program6}
             onChange={handleChange('program6')}
             error={errors.program6}
@@ -230,7 +230,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom7"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom7}
             onChange={handleChange('timeFrom7')}
             error={errors.timeFrom7}
@@ -240,7 +240,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo7"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo7}
             onChange={handleChange('timeTo7')}
             error={errors.timeTo7}
@@ -250,7 +250,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program7"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program7}
             onChange={handleChange('program7')}
             error={errors.program7}
@@ -261,7 +261,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom8"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom8}
             onChange={handleChange('timeFrom8')}
             error={errors.timeFrom8}
@@ -271,7 +271,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo8"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo8}
             onChange={handleChange('timeTo8')}
             error={errors.timeTo8}
@@ -281,7 +281,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program8"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program8}
             onChange={handleChange('program8')}
             error={errors.program8}
@@ -292,7 +292,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom9"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom9}
             onChange={handleChange('timeFrom9')}
             error={errors.timeFrom9}
@@ -302,7 +302,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo9"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo9}
             onChange={handleChange('timeTo9')}
             error={errors.timeTo9}
@@ -312,7 +312,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program9"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program9}
             onChange={handleChange('program9')}
             error={errors.program9}
@@ -323,7 +323,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeFrom10"
-            label="čas od"
+            label="Čas od"
             value={values.timeFrom10}
             onChange={handleChange('timeFrom10')}
             error={errors.timeFrom10}
@@ -333,7 +333,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="time"
             name="timeTo10"
-            label="čas do"
+            label="Čas do"
             value={values.timeTo10}
             onChange={handleChange('timeTo10')}
             error={errors.timeTo10}
@@ -343,7 +343,7 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
             className="input"
             type="text"
             name="program10"
-            label="čo sa bude diať"
+            label="Program/aktivita"
             value={values.program10}
             onChange={handleChange('program10')}
             error={errors.program10}

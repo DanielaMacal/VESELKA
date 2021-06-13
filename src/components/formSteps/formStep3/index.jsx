@@ -6,7 +6,6 @@ import './style.css';
 export const FormStep3 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep3">
-      <h2>Sem přidej detaily o Vaší svatbě</h2>
       <h2>Sem přidej Vaše svatební menu</h2>
       <p> Bla bla bla bla bla</p>
       <div className="container3">
@@ -16,7 +15,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="starter"
-              label="predkrm"
+              label="Předkrm"
               value={values.starter}
               onChange={handleChange('starter')}
               error={errors.starter}
@@ -26,7 +25,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="main"
-              label="hlavný chod"
+              label="Hlavní chod"
               value={values.main}
               onChange={handleChange('main')}
               error={errors.main}
@@ -36,7 +35,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="main2"
-              label="hlavný chod 2"
+              label="Hlavní chod (2)"
               value={values.main2}
               onChange={handleChange('main2')}
               error={errors.main2}
@@ -47,7 +46,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="desert"
-              label="dezert"
+              label="Dezert"
               value={values.desert}
               onChange={handleChange('desert')}
               error={errors.desert}
@@ -57,7 +56,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="dinner"
-              label="večera"
+              label="Večeře"
               value={values.dinner}
               onChange={handleChange('dinner')}
               error={errors.dinner}
@@ -67,7 +66,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="drinksNonAlco"
-              label="nealkoholické nápoje"
+              label="Nealkoholické nápoje"
               value={values.drinksNonAlco}
               onChange={handleChange('drinksNonAlco')}
               error={errors.drinksNonAlco}
@@ -78,7 +77,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="drinksAlco"
-              label="nápoje alko"
+              label="Alkoholické nápoje"
               value={values.drinksAlco}
               onChange={handleChange('drinksAlco')}
               error={errors.drinksAlco}
@@ -88,7 +87,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="others"
-              label="iné"
+              label="Jiné"
               value={values.others}
               onChange={handleChange('others')}
               error={errors.others}
@@ -97,7 +96,7 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
               className="input"
               type="text"
               name="others"
-              label="iné"
+              label="Jiné"
               value={values.others}
               onChange={handleChange('others')}
               error={errors.others}

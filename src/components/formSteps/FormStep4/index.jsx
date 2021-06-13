@@ -13,7 +13,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input"
             type="text"
             name="bride"
-            label="jméno nevěsty"
+            label="Jméno nevěsty"
             value={values.bride}
             onChange={handleChange('bride')}
           />
@@ -21,7 +21,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input"
             type="text"
             name="brideAbout"
-            label="o nevěstě"
+            label="O nevěstě"
             value={values.brideAbout}
             onChange={handleChange('brideAbout')}
           />
@@ -29,7 +29,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input2"
             type="file"
             name="bridePicture"
-            label="foto nevěsty"
+            label="Foto nevěsty"
             value={undefined}
             accept=".jpg"
             onChange={(event) => {
@@ -44,7 +44,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input"
             type="text"
             name="groom"
-            label="jméno nevěsty"
+            label="Jméno ženicha"
             value={values.groom}
             onChange={handleChange('groom')}
           />
@@ -52,7 +52,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input"
             type="text"
             name="groomAbout"
-            label="o ženichovi"
+            label="O ženichovi"
             value={values.groomAbout}
             onChange={handleChange('groomAbout')}
           />
@@ -60,7 +60,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             className="input2"
             type="file"
             name="groomPicture"
-            label="foto ženicha"
+            label="Foto ženicha"
             value={undefined}
             accept=".jpg"
             onChange={(event) => {
