@@ -8,8 +8,11 @@
   box-shadow: 2px 2px 5px #aab5b0;
   padding-top: 2rem;
   padding-left: 2rem;
-
-  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+.info4 {
+  margin-bottom: 2rem;
 }
 .container4 {
   display: flex;
@@ -28,10 +31,6 @@
   flex-direction: column;
   align-items: flex-end;
 }
-label {
-  margin: 0;
-  padding: 0;
-}
 
 h2 {
   margin: 20px;
@@ -39,14 +38,19 @@ h2 {
 p {
   margin-bottom: 20px;
 }
-.input2 {
+.input3 {
+  color: transparent;
+  margin: 1rem;
+  width: 8rem;
+}
+.input3 {
   color: transparent;
   margin: 1rem;
 }
-.input2::-webkit-file-upload-button {
+.input3::-webkit-file-upload-button {
   visibility: hidden;
 }
-.input2::before {
+.input3::before {
   content: 'Nahraj súbor';
   color: black;
   display: inline-block;
@@ -62,13 +66,13 @@ p {
   font-weight: 700;
   font-size: 10pt;
 }
-.input2:hover::before {
+.input3:hover::before {
   border-color: black;
 }
-.input2:active {
+.input3:active {
   outline: 0;
 }
-.input2 :active::before {
+.input3 :active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
