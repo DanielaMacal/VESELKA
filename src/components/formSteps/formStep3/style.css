@@ -1,14 +1,15 @@
 .formStep3 {
   margin-top: 3rem;
-  border-radius: 1rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding: 5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
 }
 .container3 {
   display: flex;
@@ -16,25 +17,31 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 518px;
 }
-.inputs {
+.weddingFood {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
-h2 {
-  margin: 20px;
+.inputs1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-p {
-  margin-bottom: 20px;
+.inputs2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.inputs3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.popis {
+  margin: 2rem;
 }
 
 @media (max-width: 699px) {
-  .inputs {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin: auto;
-  }
 }
