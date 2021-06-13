@@ -11,10 +11,7 @@
   padding-right: 1rem;
   padding-bottom: 2rem;
 }
-body {
-  justify-content: center;
-  align-items: center;
-}
+
 .containerEditpage {
   flex-direction: column;
   display: flex;
