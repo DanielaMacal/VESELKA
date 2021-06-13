@@ -41,10 +41,23 @@ h2 {
 .popis {
   margin-bottom: 2rem;
 }
-@media (max-width: 576px) {
-  .formStep2 {
-    padding-left: 0;
+
+@media (max-width: 928px) {
+  .weddingPlace {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1.6rem;
   }
+  .weddingProgram {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
   .weddingPlace {
     display: flex;
     align-items: flex-end;
