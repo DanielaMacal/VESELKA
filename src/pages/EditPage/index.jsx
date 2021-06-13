@@ -26,7 +26,7 @@ export const EditPage = () => {
             {({ values, errors, handleChange, handleSubmit }) => (
               <>
                 <Input
-                  className="input"
+                  className="input7"
                   type="text"
                   name="weddingId"
                   placeholder="Id svatby"
@@ -36,7 +36,7 @@ export const EditPage = () => {
                 />
 
                 <Input
-                  className="input"
+                  className="input7"
                   type="password"
                   name="password"
                   placeholder="heslo"
