@@ -71,8 +71,7 @@ button:focus {
 
 h2,
 h3 {
-  margin: 0;
-  /* color: rgba(84, 82, 82, 0.651); */
+  margin-top: 0;
 }
 
 .input {
@@ -81,6 +80,7 @@ h3 {
   margin: 0.5rem;
   border-color: #aab5b0;
   border-width: 1px;
+  color: rgba(84, 82, 82, 0.651);
 }
 
 @media only screen and (max-width: 1199px) {

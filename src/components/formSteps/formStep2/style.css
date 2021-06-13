@@ -1,14 +1,13 @@
 .formStep2 {
   margin-top: 3rem;
-  border-radius: 1rem;
+  padding-top: 3rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
-  padding-right: 5rem;
+  padding-bottom: 2rem;
 }
 .weddingPlace {
   display: flex;
@@ -32,8 +31,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 518px;
-  margin: 3rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .input {
