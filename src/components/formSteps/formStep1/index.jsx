@@ -12,7 +12,7 @@ export const FormStep1 = ({ errors, values, handleChange }) => {
             className="input7"
             type="text"
             name="nickname"
-            placeholder="nickname"
+            placeholder="ID"
             value={values.nickname}
             onChange={handleChange('nickname')}
             error={errors.nickname}
