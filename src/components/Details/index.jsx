@@ -6,7 +6,7 @@ export const Details = (props) => {
   return (
     <div
       className="details"
-      style={{ backgroundColor: props.weddingAnnouncementPicture }}
+      // style={{ backgroundColor: props.weddingAnnouncementPicture }}
     >
       <h2 className="detailsH2">Detaily</h2>
       <div className="weddingInfo">
@@ -73,20 +73,6 @@ export const Details = (props) => {
             </h3>
           )}
           {props.program8 && <p> {props.program8}</p>}
-
-          {props.timeFrom9 && (
-            <h3>
-              {props.timeFrom9} - {props.timeTo9}
-            </h3>
-          )}
-          {props.program9 && <p> {props.program9}</p>}
-
-          {props.timeFrom10 && (
-            <h3>
-              {props.timeFrom10} - {props.timeTo10}
-            </h3>
-          )}
-          {props.program10 && <p> {props.program10}</p>}
         </div>
       </div>
     </div>

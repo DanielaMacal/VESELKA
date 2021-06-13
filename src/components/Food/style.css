@@ -11,10 +11,25 @@
 
 .menuBG {
   background-color: rgba(255, 255, 255, 0.911);
-  padding: 50px;
-  padding-bottom: 30px;
+  padding: 50px 0 30px 0;
 }
 
 h3.foodDetails {
   margin-bottom: 50px;
+}
+
+.heartSymb {
+  color: #fae1de;
+}
+
+@media only screen and (max-width: 991px) {
+  .menu {
+    padding: 25px;
+  }
+  .menuBG {
+    padding: 25px 25px 5px 25px;
+  }
+  h3.foodDetails {
+    margin-bottom: 25px;
+  }
 }
