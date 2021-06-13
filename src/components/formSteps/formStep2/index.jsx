@@ -7,7 +7,6 @@ export const FormStep2 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep2">
       <h2>Sem přidej detaily o Vaší svatbě</h2>
-      <p> Bla bla bla bla bla</p>
       <div className="container2">
         <div className="weddingPlace">
           <Input

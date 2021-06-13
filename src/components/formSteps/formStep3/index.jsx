@@ -7,7 +7,6 @@ export const FormStep3 = ({ errors, values, handleChange }) => {
   return (
     <div className="formStep3">
       <h2>Sem přidej Vaše svatební menu</h2>
-      <p> Bla bla bla bla bla</p>
       <div className="container3">
         <div className="weddingFood">
           <div className="inputs">

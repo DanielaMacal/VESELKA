@@ -30,7 +30,7 @@ p {
   visibility: hidden;
 }
 .input2::before {
-  content: 'Nahraj súbor';
+  content: 'Nahrát soubor';
   color: black;
   display: inline-block;
   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);

@@ -9,22 +9,20 @@ export const FinalPage = () => {
 
   return (
     <div className="finalPage">
-      <h2>Vaša stránka bola vytvorená!</h2>
+      <h2>Vaše stránka byla úspěšně vytvořená</h2>
       <p>
-        Tento odkaz rozošlete svojim hosťom:{' '}
+        Tento odkaz rozešlete svým hostům:{' '}
         <a
           href={`https://main--gifted-nightingale-e3538a.netlify.app/preview/${id}`}
         >
-          svatebni web
+          Svatební web
         </a>
       </p>
-      <p>
-        Toto je Vaše ID, uchovajte ho pre prípad editácie Vašej stránky: {id}
-      </p>
+      <p>Toto je Vaše ID, uchovejte ho pro editaci Vaší stránky: {id}</p>
 
       <Button
         className=""
-        text="zobraziť stránku"
+        text="Zobrazit stránku"
         onClick={() => history.push(`/preview/${id}`)}
       />
     </div>

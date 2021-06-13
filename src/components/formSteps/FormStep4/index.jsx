@@ -37,7 +37,7 @@ export const FormStep4 = ({ values, handleChange, setFieldValue }) => {
             }}
           />
         </div>
-        <p>Ženích</p>
+        <p>Ženich</p>
 
         <div className="mladomanzelia">
           <Input
