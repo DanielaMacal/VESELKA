@@ -9,9 +9,8 @@
   max-width: 500rem;
   box-shadow: 2px 2px 5px #aab5b0;
   padding: 5rem;
-  flex-wrap: wrap;
 }
-.weddingFood {
+.container3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -32,22 +31,11 @@ p {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .input {
-    margin: 0.3rem;
-    margin-left: 0.8rem;
-  }
-}
-@media (max-width: 576px) {
-  .weddingFood {
+@media (max-width: 699px) {
+  .inputs {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .input {
-    margin: 1rem;
+    margin: auto;
   }
 }
